@@ -1,0 +1,127 @@
+@import 'colorscheme';
+footer{
+    background-color: $base-color;
+    color: $white;
+    width: 100%;
+    overflow: hidden;
+    #wrapper{
+        width: 100%;
+        padding: 4rem;
+        #quickLinks{
+            padding: 1rem;
+            margin-bottom: 2rem;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                a{
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+        #nationalPortals_social{
+            padding: 1rem;
+            margin-bottom: 2rem;
+            #nationalPortals{
+                width: 50%;
+                #portal_wrapper{
+                    .row{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            #social{
+                #icons_wrapper{
+                    display: flex;
+                    #facebook{
+                        height: 32px;
+                        width: 32px;
+                        padding: 0.2rem;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        a{
+                            padding: 0.2rem;
+                            display: block;
+                            height: 32px;
+                            width: 32px;
+                        }
+                        a:hover{
+                            background-color: $facebook-blue;
+                        }
+                        img{
+                            height: 90%;
+                        }
+                    }
+                    #twitter{
+                        height: 32px;
+                        width: 32px;
+                        padding: 0.2rem;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        a{
+                            padding: 0.2rem;
+                            display: block;
+                            height: 32px;
+                            width: 32px;
+                        }
+                        a:hover{
+                            background-color: $twitter-blue;
+                        }
+                        img{
+                            height: 90%;
+                        }
+                    }
+                    #youtube{
+                        height: 32px;
+                        width: 32px;
+                        padding: 0.2rem;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        a{
+                            padding: 0.2rem;
+                            display: block;
+                            height: 32px;
+                            width: 32px;
+                        }
+                        a:hover{
+                            background-color: $youtube-red;
+                        }
+                        img{
+                            height: 90%;
+                        }
+                    }
+                    #linkedin{
+                        height: 32px;
+                        width: 32px;
+                        padding: 0.2rem;
+                        border-radius: 6px;
+                        overflow: hidden;
+                        a{
+                            padding: 0.2rem;
+                            display: block;
+                            height: 32px;
+                            width: 32px;
+                        }
+                        a:hover{
+                            background-color: $linkedin-blue;
+                        }
+                        img{
+                            height: 90%;
+                        }
+                    }
+                }
+            }
+        }
+        #contact{
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+    #copyrights{
+        text-align: center;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,15 @@
+<div id="root">
+  <div id="lblHead" class="text-center">
+    <strong>Events</strong>
+  </div>
+  <div id="eventsWrapper" *ngIf="events.length">
+    <ol>
+      <li id="eventsItem" *ngFor="let index of events">
+        <a href="{{index.url}}">{{index.title}}</a>
+      </li>
+    </ol>
+  </div>
+  <div id="norec" *ngIf="events.length == 0">
+    <strong>No Records Found</strong>
+  </div>
+</div>

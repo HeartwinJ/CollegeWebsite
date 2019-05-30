@@ -1,0 +1,63 @@
+<app-header></app-header>
+<div id="root">
+  <div class="">
+    <div id="slideshow">
+      <div id="carousel-wrapper">
+        <owl-carousel [options]="carouselOptions" [items]="slides" [carouselClasses]="['owl-theme', 'sliding']">
+          <div class="item" *ngFor="let image of slides">
+            <img class="slide-image" src="{{image.image}}">
+          </div>
+        </owl-carousel>
+      </div>
+    </div>
+  </div>
+  <div id="homeContent" class="container container-fluid">
+    <div id="txtContent" class="text-justify">
+      <p>National Institute of Technology Puducherry (NITPY),  nestled in the scenes of Karaikal, a coastal enclave in the basin of river Kaveri is one among the ten new NITs in the Union Territory of Puducherry. Notwithstanding the tender age, NIT-Py is committed to produce effective and responsible technocrats who have the ability to serve the nation on its journey to growth and prosperity. In this process, students have been admitted from the academic year 2010-11 onwards through JEE Mains with 50% of seats reserved for the candidates having residence/native at Puducherry, Karaikal, Mahe, Yanam and the remaining 50% seats are filled on all India basis. The institute provides keen guidance in terms of experienced and expert faculties as well as facilities to sculpt the bright minds into professionally balanced individuals, capable enough to take up challenges of nature, of society and of the marketplace. Presently, 38 faculty members along with 36 non-teaching staff are employed for an overall strength of 586 students. Students are exposed to the most modern and up-to-date curriculum and contemporary developments in various disciplines of engineering. In addition to scientific and engineering skills, the institute provides scope to our upcoming graduates to get exposure to team work on experimental projects, presentations and communication skills and active participations in all extracurricular activities. Since necessity is the mother of inventions, our students have participated in every corner of need and took the chaos of early years as an opportunity to grow with self determination and innovation. To mention, the institute website and many laboratory experiments were designed and fabricated by them. The institution is at a constant attempt of making endeavours to scale new heights by developing a synergy between studies, research, and consulting/training activities</p><br>
+      <strong>Vision</strong><br>
+      <p>– To be among leading Indian Institutes for Excellent, Relevant, and value based Technical Education and Research.</p><br>
+      <strong>Mission</strong><br>
+      <p>– To create the infrastructure and academic environment on par with best benchmarks.<br>
+          – To offer undergraduate, postgraduate and doctoral programmes in the technical fields of national importance.<br>
+          – To collaborate for research and consultancy works with leading national and international laboratories, institutes, and industries.<br>
+          – To train young minds in intellectual and ethical strengths for developing their capacity in the areas of science, engineering, and technology.<br>
+          – To relentlessly pursue professional excellence with ethics.<br>
+          – To implement continuously improving models of comprehensive education</p>
+    </div>
+    <div id="carousel_wrappers" class="row">
+      <div id="news" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <strong>News and Announcements</strong><hr>
+        <div class="content-wrapper">
+          <div id="news-content">
+            <div id="news-item" *ngFor="let index of news">
+              <p>{{index.content}}<a href="{{index.url}}">More...></a></p><hr class="light">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="events" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <strong>Events</strong><hr>
+        <div class="content-wrapper">
+          <div id="events-content">
+            <div id="events-item" *ngFor="let index of events">
+              <u>{{index.date}}</u>
+              <p>{{index.content}}<a href="{{index.url}}">More...></a></p><hr class="light">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tenders" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <strong>Tenders and Quotations</strong><hr>
+        <div class="content-wrapper">
+          <div id="tenders-content">
+            <div id="tenders-item" *ngFor="let index of tenders">
+              <p>{{index.content}}<a href="{{index.url}}">More...></a></p>
+              <u>Deadline: {{index.deadline}}</u><hr class="light">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

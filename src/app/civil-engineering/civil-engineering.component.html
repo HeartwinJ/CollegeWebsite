@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div id="root" class="container container-fluid">
+    <div class="row">
+        <div id="leftbar" class="col-xs-4">
+            <strong id="lblHead" class="text-center"><a routerLink="/departments/civil_engineering">Civil Engineering Department</a></strong>
+            <ul>
+                <li><a routerLink="faculty_and_staff">Faculty and Staff</a></li>
+                <li><a routerLink="laboratory">Laboratory</a></li>
+                <li><a routerLink="syllabus">Syllabus</a></li>
+                <li><a routerLink="projects_and_intern">Projects and Internships</a></li>
+                <li><a routerLink="events">Events</a></li>
+            </ul>
+        </div>
+        <div id="content" class="col-xs-8">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

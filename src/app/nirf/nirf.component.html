@@ -1,0 +1,57 @@
+<app-header></app-header>
+<div id="root" class="container">
+  <div id="lblHead" class="text-center">
+    <strong>National Institutional Ranking Framework (NIRF)</strong>
+  </div>
+  <div id="accordion-wrapper">
+    <div id="panels-wrapper">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <p class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">NIRF 2019</a>
+            </p>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <a id="item" *ngFor="let index of reports19" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <p class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">NIRF 2018</a>
+            </p>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+                <a id="item" *ngFor="let index of reports18" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <p class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">NIRF 2017</a>
+            </p>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                <a id="item" *ngFor="let index of reports17" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div id="nirf_contact">
+    <strong>Contact Details for NIRF Comments and Feedback:</strong><br><br>
+    <p>{{contact[0].name}}</p>
+    <p>{{contact[0].designation}}</p><br>
+    <p>National Institute of Technology Puducherry<br>Thiruvettakudy, Karaikal - 609 609</p>
+    <p>Phone : {{contact[0].phone}}</p>
+    <p>Email : {{contact[0].email}}</p>
+  </div>
+</div>
+<app-footer></app-footer>

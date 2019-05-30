@@ -1,0 +1,86 @@
+<app-header></app-header>
+<div id="root" class="container">
+  <div id="contentWrapper">
+    <strong>Choose one of the Following Categories to search for your Form</strong>
+  </div>
+  <div id="panels-wrapper">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">FORMS FOR FACULTY / STAFF</a>
+          </p>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <a id="item" *ngFor="let index of faculty" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">FORMS FOR STUDENTS</a>
+          </p>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+              <a id="item" *ngFor="let index of students" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">GENERAL FORMS</a>
+          </p>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+              <a id="item" *ngFor="let index of general" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">OTHER FORMS</a>
+          </p>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body">
+              <a id="item" *ngFor="let index of other" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">FORMS RELATED TO STORES & PURCHASE</a>
+          </p>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse">
+          <div class="panel-body">
+              <a id="item" *ngFor="let index of stores" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <p class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">FORMS RELATED TO ACADEMICS</a>
+          </p>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div>
+                <p>Student must fill the appropriate form from the following list and submit to the Academic office (GF-R15). The requested certificates/Gradsheet may be collected after 4-5 working days from the date of submission of application.<br><br>Verification emails should be sent to "examcell@nitpy.ac.in"<br>For any queries related to academics (UG), pl. send an email to "ad-ugacad@nitpy.ac.in"<br>For any queries related to academics (PG), pl. send an email to "ad-pgacad@nitpy.ac.in"<br><br></p>
+            </div>
+              <a id="item" *ngFor="let index of academics" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<app-footer></app-footer>

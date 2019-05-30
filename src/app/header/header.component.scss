@@ -1,0 +1,91 @@
+@import 'colorscheme';
+header{
+    background-color: $base-color;
+    color: $white;
+    width: 100%;
+    #header_top{
+        height: 120px;
+        overflow: hidden;
+        display: flex;
+        a{
+            text-decoration: none;
+            display: block;
+            flex-direction: column;
+            #head_wrapper{
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                #logo{
+                    margin-left: 1rem;
+                    height: 100%;
+                    float: left;
+                }
+                #strong_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 2rem;
+                  strong{
+                        color: $white;
+                        font-size: 18px;
+                    }  
+                }
+            }
+        }
+    }
+
+    #header_bottom{
+        height: 50px;
+        margin-left: 4rem;
+        overflow: visible;
+        nav{
+            text-align: left;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                display: inline-block;
+                a{
+                    display: inline-block;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: $white;
+                }
+                a:hover{
+                    background-color: $base-color-highlight;
+                }
+                #dept-dropdown{
+                    #drop-content {
+                        padding-top: 1rem;
+                        display: none;
+                        position: absolute;
+                        background-color: $base-color;
+                        max-width: 512px;
+                        z-index: 2;
+                        ul{
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            li{
+                                display: block;
+                                a {
+                                    float: none;
+                                    padding: 1rem;
+                                    text-decoration: none;
+                                    display: block;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+                #dept-dropdown:hover #drop-content{
+                    display: block;
+                }
+            }
+        }
+    }
+}
