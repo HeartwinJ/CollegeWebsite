@@ -1,0 +1,27 @@
+<div id="root">
+  <div id="lblHead">
+    <strong>Academic Office</strong>
+  </div>
+  <div id="mainContent">
+    <div id="cardWrapper">
+      <div id="facCard" *ngFor="let index of deans">
+        <div id="pic">
+          <img src="{{index.pic}}">
+        </div>
+        <div id="details" class="text-left">
+          <p>
+            <strong>Name :</strong> {{index.name}}<br><br>
+            {{index.postition}}<br>
+            {{index.post}}<br>
+            <strong>Email :</strong> {{index.email}}<br>
+            <strong>Phone :</strong> {{index.phone}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <p>Verification emails should be sent to <strong>examcell@nitpy.ac.in</strong></p>
+    <p>For any queries related to academics (UG), pl. send an email to <strong>ad-ugacad@nitpy.ac.in</strong></p>
+    <p>For any queries related to academics (PG), pl. send an email to <strong>ad-pgacad@nitpy.ac.in</strong></p>
+    <p>For any queries related to examination cell, pl. send an email to <strong>examcell@nitpy.ac.in</strong></p>
+  </div>
+</div>

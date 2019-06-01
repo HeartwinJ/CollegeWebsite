@@ -1,0 +1,12 @@
+<div id="root">
+  <div id="lblHead">
+    <strong>Academic Calendar</strong>
+  </div>
+  <div id="contentWrapper">
+      <ul>
+        <li id="calendarItem" *ngFor="let index of cal">
+          <a href="{{index.url}}">{{index.title}}</a>
+        </li>
+      </ul>
+    </div>
+</div>

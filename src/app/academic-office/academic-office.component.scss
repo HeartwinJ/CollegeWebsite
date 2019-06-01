@@ -1,0 +1,32 @@
+@import 'colorscheme';
+#root{
+    #lblHead{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    #mainContent{
+        margin-left: 3rem;
+        #cardWrapper{
+            display: flex;
+        }
+        #facCard{
+            display: flex;
+            background-color: $fac-card-bg;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            #pic{
+                img{
+                    width: 150px;
+                    border-radius: 80px;
+                    border: 1px solid $fac-card-pic-border;
+                }
+            }
+            #details{
+                margin-left: 2rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

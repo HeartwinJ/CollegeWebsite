@@ -36,9 +36,10 @@ header{
     }
 
     #header_bottom{
-        height: 50px;
-        margin-left: 4rem;
+        padding-left: 4rem;
+        margin-top: 1rem;
         overflow: visible;
+        background-color: $navbar-bg;
         nav{
             text-align: left;
             ul{
@@ -55,14 +56,25 @@ header{
                     color: $white;
                 }
                 a:hover{
-                    background-color: $base-color-highlight;
+                    background-color: $navbar-highlight;
+                    color: $white;
+                }
+                .active{
+                    background-color: $main-bg-color;
+                    color: $black;
+                    //border-top-left-radius: 1rem;
+                    //border-top-right-radius: 1rem;
+                }
+                .active:hover{
+                    background-color: $main-bg-color;
+                    color: $black;
                 }
                 #dept-dropdown{
                     #drop-content {
                         padding-top: 1rem;
                         display: none;
                         position: absolute;
-                        background-color: $base-color;
+                        background-color: $navbar-bg;
                         max-width: 512px;
                         z-index: 2;
                         ul{

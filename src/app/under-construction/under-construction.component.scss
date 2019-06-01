@@ -1,0 +1,32 @@
+@import 'colorscheme';
+#wrapper{
+    height: 100vh;
+    padding-left: 10vw;
+    padding-top: 15vh;
+    background-color: $construct;
+    color: $black;
+    @media only screen and (max-width: 1366px) { 
+        h1{
+            font-size: 18vw;
+        }
+        p{
+            font-size: 6vw;
+        }
+    }
+    h1{
+        font-size: 9vw;
+    }
+    p{
+        font-size: 3vw;
+    }
+    a{
+        text-decoration: none;
+        color: $construct-black;
+        p{
+            font-size: 2vw;
+        }
+    }
+    a:hover{
+        color: $construct-black-hover;
+    }
+}

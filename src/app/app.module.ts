@@ -78,6 +78,19 @@ import { MathLabComponent } from './math-lab/math-lab.component';
 import { MathSyllabusComponent } from './math-syllabus/math-syllabus.component';
 import { MathProjectsAndInternComponent } from './math-projects-and-intern/math-projects-and-intern.component';
 import { MathEventsComponent } from './math-events/math-events.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { AcademicsComponent } from './academics/academics.component';
+import { AcademicOfficeComponent } from './academic-office/academic-office.component';
+import { AcademicHomeComponent } from './academic-home/academic-home.component';
+import { AcademicProgramsComponent } from './academic-programs/academic-programs.component';
+import { AcademicCalendarComponent } from './academic-calendar/academic-calendar.component';
+import { AcademicDocumentsComponent } from './academic-documents/academic-documents.component';
+import { AcademicScholarshipsComponent } from './academic-scholarships/academic-scholarships.component';
+import { AcademicFeeDetailsComponent } from './academic-fee-details/academic-fee-details.component';
+import { AcademicDigitalInitiativesComponent } from './academic-digital-initiatives/academic-digital-initiatives.component';
+import { AcademicAdmissionBTechComponent } from './academic-admission-btech/academic-admission-btech.component';
+import { AcademicAdmissionMTechComponent } from './academic-admission-mtech/academic-admission-mtech.component';
+import { AcademicAdmissionPhDComponent } from './academic-admission-ph-d/academic-admission-ph-d.component';
 
 @NgModule({
   declarations: [
@@ -153,7 +166,20 @@ import { MathEventsComponent } from './math-events/math-events.component';
     MathLabComponent,
     MathSyllabusComponent,
     MathProjectsAndInternComponent,
-    MathEventsComponent
+    MathEventsComponent,
+    UnderConstructionComponent,
+    AcademicsComponent,
+    AcademicOfficeComponent,
+    AcademicHomeComponent,
+    AcademicProgramsComponent,
+    AcademicCalendarComponent,
+    AcademicDocumentsComponent,
+    AcademicScholarshipsComponent,
+    AcademicFeeDetailsComponent,
+    AcademicDigitalInitiativesComponent,
+    AcademicAdmissionBTechComponent,
+    AcademicAdmissionMTechComponent,
+    AcademicAdmissionPhDComponent
   ],
   imports: [
     BrowserModule,
