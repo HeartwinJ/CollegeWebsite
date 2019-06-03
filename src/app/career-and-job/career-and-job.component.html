@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div id="root" class="container">
+  <div id="contentWrapper">
+    <strong>Choose one of the Following Categories to search for your Form</strong>
+  </div>
+  <div id="panels-wrapper">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default" *ngFor="let index of job">
+        <div class="panel-heading" id="panel-heading">
+          <p class="panel-title" id="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#{{index.title}}">{{index.title}}</a>
+          </p>
+        </div>
+        <div id="{{index.title}}" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div *ngFor="let i of index.children" id="itemWrapper"><a id="item" href="{{i.url}}" style="text-decoration: none">{{i.title}}</a></div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<app-footer></app-footer>

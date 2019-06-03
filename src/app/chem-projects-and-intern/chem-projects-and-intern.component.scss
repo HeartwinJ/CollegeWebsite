@@ -1,18 +1,1 @@
-#root{
-    margin-left: 1rem;
-    #lblHead{
-        font-size: 18px;
-        margin-bottom: 2rem;
-    }
-    #projWrapper{
-        ol{
-            list-style-type: upper-roman; 
-            #projItem{
-                a{
-                    text-decoration: none;
-    
-                }
-            }
-        }
-    }
-}
+@import 'deptProjAndIntern';

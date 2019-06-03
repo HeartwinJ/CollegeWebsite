@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div id="root" class="container container-fluid">
+  <div class="row">
+    <div id="leftbar" class="col-xs-3">
+        <strong id="lblHead" class="text-center">Choose a Year</strong>
+      <ul>
+        <li *ngFor="let index of list"><a routerLink="">{{index.year}}</a></li>
+      </ul>
+    </div> 
+    <div id="content" class="col-xs-9">
+      <div id="slideshow">
+        <div id="carousel-wrapper">
+          <owl-carousel [options]="carouselOptions" [items]="sampleSlides" [carouselClasses]="['owl-theme', 'sliding']">
+            <div class="item" *ngFor="let image of sampleSlides">
+              <img class="slide-image" src="{{image.image}}">
+            </div>
+          </owl-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

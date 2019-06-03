@@ -83,6 +83,8 @@ import { AcademicDigitalInitiativesComponent } from './academic-digital-initiati
 import { AcademicAdmissionBTechComponent } from './academic-admission-btech/academic-admission-btech.component';
 import { AcademicAdmissionMTechComponent } from './academic-admission-mtech/academic-admission-mtech.component';
 import { AcademicAdmissionPhDComponent } from './academic-admission-ph-d/academic-admission-ph-d.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CareerAndJobComponent } from './career-and-job/career-and-job.component';
 
 
 const routes: Routes = [
@@ -209,10 +211,10 @@ const routes: Routes = [
   
   //Footer Links
   { path: 'facultyLogin', redirectTo: '/501' },
-  { path: 'gallery', redirectTo: '/501' },
+  { path: 'gallery', component: GalleryComponent },
   { path: 'alumniPortal', redirectTo: '/501' },
   { path: 'forms', component: FormsDownloadComponent },
-  { path: 'careers', redirectTo: '/501' },
+  { path: 'careers', component: CareerAndJobComponent },
   { path: 'nirf', component: NirfComponent },
   { path: 'nad', component: NadComponent },
 

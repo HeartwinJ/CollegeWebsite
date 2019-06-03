@@ -1,18 +1,1 @@
-#root{
-    margin-left: 1rem;
-    #lblHead{
-        font-size: 18px;
-        margin-bottom: 2rem;
-    }
-    #eventsWrapper{
-        ol{
-            list-style-type: upper-roman; 
-            #eventsItem{
-                a{
-                    text-decoration: none;
-    
-                }
-            }
-        }
-    }
-}
+@import 'deptEvents';

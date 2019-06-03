@@ -91,6 +91,8 @@ import { AcademicDigitalInitiativesComponent } from './academic-digital-initiati
 import { AcademicAdmissionBTechComponent } from './academic-admission-btech/academic-admission-btech.component';
 import { AcademicAdmissionMTechComponent } from './academic-admission-mtech/academic-admission-mtech.component';
 import { AcademicAdmissionPhDComponent } from './academic-admission-ph-d/academic-admission-ph-d.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CareerAndJobComponent } from './career-and-job/career-and-job.component';
 
 @NgModule({
   declarations: [
@@ -179,7 +181,9 @@ import { AcademicAdmissionPhDComponent } from './academic-admission-ph-d/academi
     AcademicDigitalInitiativesComponent,
     AcademicAdmissionBTechComponent,
     AcademicAdmissionMTechComponent,
-    AcademicAdmissionPhDComponent
+    AcademicAdmissionPhDComponent,
+    GalleryComponent,
+    CareerAndJobComponent
   ],
   imports: [
     BrowserModule,

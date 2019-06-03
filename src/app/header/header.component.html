@@ -14,33 +14,38 @@
     </a>
   </div>
   <div id="header_bottom">
-    <nav>
-      <ul>
-        <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
-        <li><a routerLink="/academics" routerLinkActive="active">Academics</a></li>
-        <li><a routerLink="/administration" routerLinkActive="active">Administration</a></li>
-        <li>
-          <div id="dept-dropdown">
-            <a routerLink="/departments" routerLinkActive="active">Departments</a>
-            <div id="drop-content">
-              <ul>
-                <li><a routerLink="/departments/chemistry">Chemistry</a></li>
-                <li><a routerLink="/departments/civil_engineering">Civil Engineering</a></li>
-                <li><a routerLink="/departments/computer_science_and_engineering">Computer Science and Engineering</a></li>
-                <li><a routerLink="/departments/electrical_and_electronics_engineering">Electrical and Electronics Engineering</a></li>
-                <li><a routerLink="/departments/electronics_and_communication_engineering">Electronics and Communtication Engineering</a></li>
-                <li><a routerLink="/departments/humanities_and_social_sciences">Humanities and Social Sciences</a></li>
-                <li><a routerLink="/departments/mathematics">Mathematics</a></li>
-                <li><a routerLink="/departments/mechanical_engineering">Mechanical Engineering</a></li>
-                <li><a routerLink="/departments/physics">Physics</a></li>
-              </ul>
+    <div id="iconWrapper">
+      <img id="menuIcon" src="assets/icons/menu_icon.png" (click)="toggle()">
+    </div>
+    <div class="navWrapper{{navClass}}">
+      <nav>
+        <ul>
+          <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+          <li><a routerLink="/academics" routerLinkActive="active">Academics</a></li>
+          <li><a routerLink="/administration" routerLinkActive="active">Administration</a></li>
+          <li>
+            <div id="dept-dropdown">
+              <a routerLink="/departments" routerLinkActive="active">Departments</a>
+              <div id="drop-content">
+                <ul>
+                  <li><a routerLink="/departments/chemistry">Chemistry</a></li>
+                  <li><a routerLink="/departments/civil_engineering">Civil Engineering</a></li>
+                  <li><a routerLink="/departments/computer_science_and_engineering">Computer Science and Engineering</a></li>
+                  <li><a routerLink="/departments/electrical_and_electronics_engineering">Electrical and Electronics Engineering</a></li>
+                  <li><a routerLink="/departments/electronics_and_communication_engineering">Electronics and Communtication Engineering</a></li>
+                  <li><a routerLink="/departments/humanities_and_social_sciences">Humanities and Social Sciences</a></li>
+                  <li><a routerLink="/departments/mathematics">Mathematics</a></li>
+                  <li><a routerLink="/departments/mechanical_engineering">Mechanical Engineering</a></li>
+                  <li><a routerLink="/departments/physics">Physics</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </li>
-        <li><a routerLink="/research_and_consultancy" routerLinkActive="active">Research and Consultancy</a></li>
-        <li><a routerLink="/student_welfare" routerLinkActive="active">Student Welfare</a></li>
-        <li><a routerLink="/training_and_placement" routerLinkActive="active">Training and Placement</a></li>
-      </ul>
-    </nav>
+          </li>
+          <li><a routerLink="/research_and_consultancy" routerLinkActive="active">Research and Consultancy</a></li>
+          <li><a routerLink="/student_welfare" routerLinkActive="active">Student Welfare</a></li>
+          <li><a routerLink="/training_and_placement" routerLinkActive="active">Training and Placement</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>

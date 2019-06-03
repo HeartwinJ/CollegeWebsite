@@ -7,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  navClass: string = ' ';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggle() {
+    if (this.navClass == ' ') {
+      this.navClass = 'Show';
+    }
+    else {
+      this.navClass = ' ';
+    }
   }
 }
