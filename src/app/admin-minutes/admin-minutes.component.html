@@ -1,3 +1,46 @@
-<p>
-  admin-minutes works!
-</p>
+<div id="root">
+    <div id="lblHead_Title" class="text-center">
+      <strong>Minutes Of BoG , Senate and Finance Committee</strong>
+    </div>
+    <div id="accordion-wrapper">
+        <div id="panels-wrapper">
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Minutes of Board of Governors</a>
+                </p>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body" *ngFor="let index of bog">
+                  <a id="item"  href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Minutes of Senate</a>
+                </p>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body" *ngFor="let index of senate">
+                    <a id="item"  href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <p class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Minutes of Finance Committee</a>
+                </p>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body" *ngFor="let index of fc" >
+                    <a id="item" href="{{index.url}}" style="text-decoration: none">{{index.title}}</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>

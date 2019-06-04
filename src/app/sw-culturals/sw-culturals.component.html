@@ -1,3 +1,39 @@
-<p>
-  sw-culturals works!
-</p>
+<div id="root">
+    <div id="lblHead" class="text-center">
+      <strong>Culturals Committee</strong>
+    </div>
+    <div class="text-justify">
+      <p id="content">The cultural committee is functioning in association with Student Welfare/NITPY. The cultural committee is organizing annual cultural fest every year during odd semester (September/October). The cultural fest started as intra-college cultural fest named as “Utkarsha” in the year 2016 and resulted in grand success. Then the cultural fest started reaching its sky and continued as inter-college Cultural fest from 2017 onwards with the name “Le Ciel”. The fest attracted many participants in and around Karaikal every year attaining a grand success.<br><br>Apart from conducting inter-college cultural fest competition, the cultural committee is also encouraging students to showcase their talents in competition held by other colleges/institution through various clubs namely Literary, Art and Crafts, Dance, Photography. The committee also encourages students to participate in various competitions held by Government of India namely World Tourism Day, Carnival etc.<br><br>Based on the requirements/request, the committee assists in organizing cultural events in Independence Day, Republic day, conferences, workshops, Convocation etc.</p>
+    </div>
+    <div id="lblHead_sub" class="text-left">
+        <strong>Faculty and Staff Members</strong>
+    </div>
+    <div id ="chairperson" class="row">
+      <div id="left-box" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor ="let index of chairperson">
+          <div id="image" class="text-center">
+            <img src="{{index.pic}}">
+          </div>
+      </div>
+      <div id="right-box" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor ="let index of chairperson">
+          <div id="lblHead" class="text-center">
+              <p><strong>{{index.name}}</strong> </p>
+            </div>
+            <div id="designation" class="text-center">
+              <p><strong>Chairperson</strong></p>
+              <p><strong>{{index.designation}}</strong>{{index.mail}}</p>
+            </div>
+      </div>
+    </div>
+    <div id="fac_box" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 " *ngFor="let index of member">
+        <div id="image" class="text-center">
+          <img src="{{index.pic}}">
+          <div id="lblHead" class="text-center">
+            <p><strong>{{index.name}}</strong> </p>
+          </div>
+          <div id="designation" class="text-center">
+            <p><strong>Member</strong></p>
+            <p><strong>{{index.designation}}</strong>{{index.mail}}</p>
+          </div>
+        </div>
+    </div>
+</div>

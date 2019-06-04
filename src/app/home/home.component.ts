@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -15,10 +14,15 @@ export class HomeComponent implements OnInit {
   }
 
   carouselOptions = {
+    startPosition: 0,
+    margin: 10,
+    //merge: true,
+    //mergeFit: true,
+    autoWidth: true,
     items: 1,
-    margin: 0,
-    //loop: true,
-    rewind: true,
+    center: true,
+    loop: true,
+    //rewind: true,
     autoplay: true,
     autoplayTimeout: 3000,
     nav: false,
@@ -36,6 +40,20 @@ export class HomeComponent implements OnInit {
       image: "assets/images/slides/img004.jpg"
     }, {
       image: "assets/images/slides/img005.jpg"
+    }, {
+      image: "assets/images/slides/img006.jpg"
+    }, {
+      image: "assets/images/slides/img007.jpg"
+    }, {
+      image: "assets/images/slides/img008.jpg"
+    }, {
+      image: "assets/images/slides/img009.jpg"
+    }, {
+      image: "assets/images/slides/img010.jpg"
+    }, {
+      image: "assets/images/slides/img011.jpg"
+    }, {
+      image: "assets/images/slides/img012.jpg"
     }
   ];
   

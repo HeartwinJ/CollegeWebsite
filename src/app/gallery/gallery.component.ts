@@ -35,6 +35,20 @@ export class GalleryComponent implements OnInit {
       image: "assets/images/slides/img004.jpg"
     }, {
       image: "assets/images/slides/img005.jpg"
+    }, {
+      image: "assets/images/slides/img006.jpg"
+    }, {
+      image: "assets/images/slides/img007.jpg"
+    }, {
+      image: "assets/images/slides/img008.jpg"
+    }, {
+      image: "assets/images/slides/img009.jpg"
+    }, {
+      image: "assets/images/slides/img010.jpg"
+    }, {
+      image: "assets/images/slides/img011.jpg"
+    }, {
+      image: "assets/images/slides/img012.jpg"
     }
   ];
 

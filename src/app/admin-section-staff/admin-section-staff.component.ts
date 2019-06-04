@@ -21,7 +21,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Computer Science and Engineering',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
       
@@ -31,7 +31,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Electronics and Communication Engineering',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
      
@@ -41,7 +41,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Electrical and Electronics Engineering',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
       
@@ -51,7 +51,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Mechanical Engineering',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
       
@@ -61,7 +61,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Civil Engineering',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
       
@@ -71,7 +71,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'chemistry',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
       
@@ -81,7 +81,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Physics',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
     {
       
@@ -91,7 +91,7 @@ export class AdminSectionStaffComponent implements OnInit {
       department: 'Humanities and Social Sciences',
       address: 'National Institute of Technology Puducherry , Thiruvettakudy, Karaikal - 609609',
       contactTel: ' 91 1234567890',
-      contactMail: ' hod@nitpy.ac.in'
+      contactMail: ' staff@nitpy.ac.in'
     },
   ]
 }

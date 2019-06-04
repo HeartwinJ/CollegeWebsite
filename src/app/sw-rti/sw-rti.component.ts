@@ -12,4 +12,18 @@ export class SwRtiComponent implements OnInit {
   ngOnInit() {
   }
 
+  file=[
+    {
+      url:'',
+      filename:'RTI Act',
+    },
+    {
+      url:'',
+      filename:'Application Form',
+    },
+    {
+      url:'',
+      filename:'Procedure',
+    }
+  ]
 }

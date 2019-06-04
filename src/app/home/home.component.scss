@@ -5,7 +5,8 @@
         /*height: 384px;*/
         overflow: hidden;
         .slide-image{
-            height: 420px;
+            height: 70vh;
+            width: 80vw;
         }
     }
     #homeContent{
@@ -45,4 +46,18 @@
             padding: 1rem;
         }
     }
+}
+
+@media screen and (max-width:1024px)
+{
+    #root{
+        #slideshow{
+            /*height: 384px;*/
+            overflow: hidden;
+            .slide-image{
+                height: 30vh;
+            }
+        }
+    }
+    
 }

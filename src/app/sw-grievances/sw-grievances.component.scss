@@ -1,0 +1,64 @@
+#root{
+    font-size:18px;
+    #lblHead{
+        margin-bottom: 2rem;
+        strong{
+            font-size: 24px;
+        }
+    }
+    
+    #doc{
+        #doc-box{
+            cursor:pointer;
+            padding-top:2rem;
+            padding-bottom: 2rem;
+            margin-top:2rem;
+            svg{
+                margin-left:0;
+                width: 128px;
+                height:170px;
+                padding-bottom:2rem;
+            }
+            #title{
+                font-size:18px;
+                text-decoration-style: none;
+            }
+
+        }
+        #doc-box:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    }
+    #staff{
+        padding-bottom: 5rem;
+            #left-box{
+                #image{
+                    img{
+                        width:200px;
+                        
+                        margin-bottom: 5px;
+                        
+                    }
+                }
+            }
+            #right-box{
+                #lblHead{
+                    margin-bottom: 2rem;
+                    strong{
+                        font-size: 20px;
+                    }
+                }
+                #designation{
+                    font-size: 18px;
+                }
+            }
+        }
+
+}
+@media screen and (max-width:600px)
+{
+    #doc-box{
+        
+        margin-bottom:3rem;
+    }
+}

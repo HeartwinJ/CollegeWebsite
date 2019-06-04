@@ -12,4 +12,20 @@ export class SwDeanComponent implements OnInit {
   ngOnInit() {
   }
 
+  dean=[
+    {
+      pic:'assets/images/img_avatar.png',
+      name:'Anonymous',
+      field:'Student Welfare (Boys)',
+      mail:'mail@mail.com',
+      phone:'123456789'
+    }, 
+    {
+      pic:'assets/images/img_avatar.png',
+      name:'Anonymous',
+      field:'Student Welfare (Girls)',
+      mail:'mail@mail.com',
+      phone:'123456789'
+    }
+  ]
 }
