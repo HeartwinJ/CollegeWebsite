@@ -1,0 +1,32 @@
+#root{
+    #lblHead_Title{
+        margin-bottom: 2rem;
+        strong{
+            font-size: 26px;
+        }
+    }
+    #officers{
+    padding-bottom: 5rem;
+        #left-box{
+            #image{
+                img{
+                    width:200px;
+                    border-radius: 50%;
+                    margin-bottom: 5px;
+                    
+                }
+            }
+        }
+        #right-box{
+            #lblHead{
+                margin-bottom: 2rem;
+                strong{
+                    font-size: 20px;
+                }
+            }
+            #designation{
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import 'colorscheme';
+#root{
+    padding: 2rem;
+    .row{
+        #leftbar{
+            height: auto;
+            background-color: $leftbar-gray;
+            padding-top: 1rem;
+            #lblHead{
+                font-size: 18px;
+            }
+            a{
+                text-decoration: none;
+                color: $white;
+                display: block;
+                padding: 1rem;
+            }
+            ul{
+                list-style: none;
+                padding: 2rem;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        display: block;
+                        padding: 1rem;
+                    }
+                    a:hover{
+                        background-color: $leftbar-gray-highlight;
+                    }
+                }
+            }
+        }
+        #content{
+            height: 100%;
+            padding: 2rem;
+        }
+    }
+}

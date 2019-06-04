@@ -1,0 +1,22 @@
+@import 'colorscheme';
+#root{
+    font-size:18px;
+    #lblHead_title{
+        margin-bottom: 2rem;
+        strong{
+            font-size: 24px;
+        }
+    }
+    #fp-table{
+       td{
+           border-right:solid $black 2px ;
+        }
+       #table-style{
+        margin-bottom:4rem;
+        margin-top:4rem;
+        border: solid $black 2px ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+       }
+    }
+}

@@ -1,0 +1,56 @@
+<div id="root">
+
+  <div class="row">
+    <div id="lblHead_title" class="text-center">
+      <strong><b>Associate Dean</b></strong>
+    </div>
+    <div id="fac_box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 " *ngFor="let index of research">
+      <div id="lblHead" class="text-center">
+        <strong>Research</strong>
+      </div>
+      <div id="image" class="text-center">
+        <img src="{{index.pic}}">
+        <div id="lblHead" class="text-center">
+          <p><strong>{{index.name}}</strong> </p>
+        </div>
+        <div id="designation" class="text-center">
+          <p><strong>Associate Dean - Research</strong></p>
+        </div>
+      </div>
+      <div id="Profile">
+        <div id="details">
+          <table>
+            <tr class="text-left">
+              <p><strong>Mail : </strong>{{index.mail}}</p>
+              <p><strong>Phone : </strong>{{index.phone}}</p>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="fac_box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 " *ngFor="let index of consultancy">
+      <div id="lblHead" class="text-center">
+        <strong>Consultancy</strong>
+      </div>
+      <div id="image" class="text-center">
+        <img src="{{index.pic}}">
+        <div id="lblHead" class="text-center">
+          <p><strong>{{index.name}}</strong> </p>
+        </div>
+        <div id="designation" class="text-center">
+          <p><strong>Associate Dean - Consultancy</strong></p>
+        </div>
+      </div>
+      <div id="Profile">
+        <div id="details">
+          <table>
+            <tr class="text-left">
+              <p><strong>Mail : </strong>{{index.mail}}</p>
+              <p><strong>Phone : </strong>{{index.phone}}</p>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

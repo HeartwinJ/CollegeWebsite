@@ -1,0 +1,35 @@
+@import 'colorscheme';
+#root{
+    font-size:18px;
+    #lblHead_title{
+        margin-bottom: 2rem;
+        strong{
+            font-size: 24px;
+        }
+    }
+    #fp-table{
+       margin-left:0;
+
+        
+       td{
+           border-right:solid $black 2px ;
+        }
+        th{ color: $white;
+            background: $base-color;
+            border-right:solid $black 2px ;
+            border-bottom:solid $black 2px ;
+        }
+       #table-style{
+        margin-bottom:4rem;
+        margin-top:4rem;
+        border: solid $black 2px ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+    }
+}
+@media screen and (max-width:600px)
+{
+    #sno{
+        display: none;
+    }
+}

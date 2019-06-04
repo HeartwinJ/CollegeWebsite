@@ -1,0 +1,30 @@
+#root{
+    #lblHead_Title{
+        margin-bottom: 2rem;
+        strong{
+            font-size: 26px;
+        }
+    }
+    #director{
+    padding-bottom: 5rem;
+        #left-box{
+            #image{
+                img{
+                    width:200px;
+                    
+                }
+            }
+        }
+        #right-box{
+            #lblHead{
+                margin-bottom: 2rem;
+                strong{
+                    font-size: 20px;
+                }
+            }
+            #designation{
+                font-size: 18px;
+            }
+        }
+    }
+}

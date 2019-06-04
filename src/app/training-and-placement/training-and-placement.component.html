@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div id="root" class="container container-fluid">
+    <div class="row">
+        <div id="leftbar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <strong id="lblHead" class="text-center"><a routerLink="/training_and_placement">Training and Placement </a></strong>
+            <ul>
+                <li><a routerLink="tnp-procedure">Placement Procedure</a></li>
+                <li><a routerLink="tnp-brochure">Brochure</a></li>
+                <li><a routerLink="tnp-past-recruiters">Past Recruiters</a></li>
+                <li><a routerLink="tnp-internship">Internship Opportunities</a></li>
+                <li><a routerLink="tnp-contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content" class="col-xs-12 col-md-9 col-sm-9 col-lg-9 col-xl-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

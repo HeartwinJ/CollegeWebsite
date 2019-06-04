@@ -1,0 +1,27 @@
+
+<div id="root" >
+    <div id="lblHead_title" class="text-center" >
+        <strong>List Of Patents</strong>
+    </div>
+    <div id="fp-table" class="col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      
+      <table id="table-style" class="table table-bordered table-condensed" >
+        <tr >
+          <th class="text-center" id="sno">S.no.</th>
+          <th class="text-center">Title of Project</th>
+          <th class="text-center">Faculty Name & Department</th>
+          <th class="text-center">Patent Filling Date</th>
+          <th class="text-center">Patent Sanction Date</th>
+          <th class="text-center">Patent No.</th>
+        </tr>
+        <tr *ngFor="let index of patent">
+          <td id ="sno"class="text-center">{{index.no}}</td>
+          <td>{{index.title}}</td>
+          <td class="text-center">{{index.faculty}}<br> Department of {{index.department}}</td>
+          <td>{{index.filling}}</td>
+          <td>{{index.sanction}}</td>
+          <td>{{index.patentno}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>

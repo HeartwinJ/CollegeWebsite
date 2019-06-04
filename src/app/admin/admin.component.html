@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div id="root" class="container container-fluid">
+    <div class="row">
+        <div id="leftbar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <strong id="lblHead" class="text-center"><a routerLink="/administration">Administration </a></strong>
+            <ul>
+                <li><a routerLink="admin-visitor">Visitor</a></li>
+                <li><a routerLink="admin-chairman">Chairman</a></li>
+                <li><a routerLink="admin-director">Director</a></li>
+                <li><a routerLink="admin-board-of-governors">Board Of Governors</a></li>
+                <li><a routerLink="admin-senate">Senate</a></li>
+                <li><a routerLink="admin-registrar">Registrar</a></li>
+                <li><a routerLink="admin-vigilance">Vigilance</a></li>
+                <li><a routerLink="admin-dean">Associate Deans</a></li>
+                <li><a routerLink="admin-officers">Nodal Officers and Co-ordinators</a></li>
+                <li><a routerLink="admin-hod">Heads of The Department</a></li>
+                <li><a routerLink="admin-buildings">Buildings and Works Committee</a></li>
+                <li><a routerLink="admin-finance">Finance Committee</a></li>
+                <li><a routerLink="admin-acts">Acts,Statues & Schedule</a></li>
+                <li><a routerLink="admin-minutes">Minutes of BoG , Senate & FC</a></li>
+                <li><a routerLink="admin-committees">List Of Committees</a></li>
+                <li><a routerLink="admin-annual-report">Annual Report</a></li>
+                <li><a routerLink="admin-hostel">Hostel Administration</a></li>
+                <li><a routerLink="admin-section-staff">Section Staff</a></li>
+                <li><a routerLink="admin-newsletter">Newsletter</a></li>
+            </ul>
+        </div>
+        <div id="content" class="col-xs-12 col-md-9 col-sm-9 col-lg-9 col-xl-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

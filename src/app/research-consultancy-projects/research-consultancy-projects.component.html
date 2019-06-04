@@ -1,0 +1,27 @@
+
+<div id="root" >
+  <div id="lblHead_title" class="text-center" >
+      <strong>Consultancy Projects</strong>
+  </div>
+  <div id="fp-table" class="col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    
+    <table id="table-style" class="table table-bordered table-condensed" >
+      <tr class="text-center">
+        <th class="text-center" id="sno">S.no.</th>
+        <th class="text-center">Title of Project</th>
+        <th class="text-center">Funding Agency</th>
+        <th class="text-center">Project Investigator</th>
+        <th class="text-center">Year</th>
+        <th class="text-center">Project Valuation</th>
+      </tr>
+      <tr *ngFor="let index of project">
+        <td id ="sno"class="text-center">{{index.no}}</td>
+        <td>{{index.title}}</td>
+        <td>{{index.fund}}</td>
+        <td>{{index.investigator}}</td>
+        <td>{{index.year}}</td>
+        <td>{{index.budget}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

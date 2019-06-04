@@ -1,0 +1,28 @@
+<div id="root">
+    <div id="lblHead_Title" class="text-center">
+      <strong>Vigilance Officer</strong>
+    </div>
+    <div id="vigilance" class="row">
+      <div id="left-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor="let index of vigilance">
+        <div id="image" class="text-center">
+          <img src="{{index.pic}}">
+        </div>
+      </div>
+      <div id="right-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor="let index of vigilance">
+        <div id="lblHead" class="text-center">
+          <p><strong>{{index.name}}</strong> </p>
+        </div>
+        <div id="designation" class="text-center">
+          <p class="text-center">{{index.designation}}</p>
+          <p class="text-center">{{index.address}}</p>
+          <p class="text-center">{{index.contactMail}}</p>
+          <p class="text-center">{{index.contactTel}}</p>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="text-justify col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <p style="font-size: 18px">Dr. A. Venkasedsan, Assistant Professor, Department of EEE is appointed as the Chief Vigilance Officer (CVO) of the Institute by the Director. The CVO acts as a special assistant to the higher authorities of the institute in all matters pertaining to Vigilance. He assists in providing a link between his organisation and the Central Vigilance Commission on one hand and his organisation and the Central Bureau of Investigation on the other. Vigilance functions to be performed by the CVO are of wide sweep and include collecting intelligence about the corrupt practices committed, or likely to be committed by the employees of his organisation; investigating or causing an investigation to be made into verifiable allegations reported to him; processing investigation reports for further consideration of the disciplinary authority concerned; referring the matters to the Commission for advice wherever necessary, taking steps to prevent commission of improper practices/misconducts, etc.</p>
+      </div>
+  </div>
+
+

@@ -85,6 +85,60 @@ import { AcademicAdmissionMTechComponent } from './academic-admission-mtech/acad
 import { AcademicAdmissionPhDComponent } from './academic-admission-ph-d/academic-admission-ph-d.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CareerAndJobComponent } from './career-and-job/career-and-job.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminAboutComponent } from './admin-about/admin-about.component';
+import { AdminActsComponent } from './admin-acts/admin-acts.component';
+import { AdminAnnualReportComponent } from './admin-annual-report/admin-annual-report.component';
+import { AdminBoardOfGovernorsComponent } from './admin-board-of-governors/admin-board-of-governors.component';
+import { AdminBuildingsComponent } from './admin-buildings/admin-buildings.component';
+import { AdminChairmanComponent } from './admin-chairman/admin-chairman.component';
+import { AdminCommitteesComponent } from './admin-committees/admin-committees.component';
+import { AdminDeanComponent } from './admin-dean/admin-dean.component';
+import { AdminDirectorComponent } from './admin-director/admin-director.component';
+import { AdminFinanceComponent } from './admin-finance/admin-finance.component';
+import { AdminHodComponent } from './admin-hod/admin-hod.component';
+import { AdminHostelComponent } from './admin-hostel/admin-hostel.component';
+import { AdminMinutesComponent } from './admin-minutes/admin-minutes.component';
+import { AdminNewsletterComponent } from './admin-newsletter/admin-newsletter.component';
+import { AdminOfficersComponent } from './admin-officers/admin-officers.component';
+import { AdminRegistrarComponent } from './admin-registrar/admin-registrar.component';
+import { AdminSectionStaffComponent } from './admin-section-staff/admin-section-staff.component';
+import { AdminSenateComponent } from './admin-senate/admin-senate.component';
+import { AdminVigilanceComponent } from './admin-vigilance/admin-vigilance.component';
+import { AdminVisitorComponent } from './admin-visitor/admin-visitor.component';
+import { ResearchComponent } from './research/research.component';
+import { ResearchAboutComponent } from './research-about/research-about.component';
+import { ResearchConsultancyProjectsComponent } from './research-consultancy-projects/research-consultancy-projects.component';
+import { ResearchDeanComponent } from './research-dean/research-dean.component';
+import { FpChemComponent } from './fp-chem/fp-chem.component';
+import { FpCivilComponent } from './fp-civil/fp-civil.component';
+import { FpCseComponent } from './fp-cse/fp-cse.component';
+import { FpEceComponent } from './fp-ece/fp-ece.component';
+import { FpEeeComponent } from './fp-eee/fp-eee.component';
+import { FpEngComponent } from './fp-eng/fp-eng.component';
+import { FpMathComponent } from './fp-math/fp-math.component';
+import { FpMechComponent } from './fp-mech/fp-mech.component';
+import { FpPhyComponent } from './fp-phy/fp-phy.component';
+import { ResearchLopComponent } from './research-lop/research-lop.component';
+import { ResearchInnovationComponent } from './research-innovation/research-innovation.component';
+import { StudentwfComponent } from './studentwf/studentwf.component';
+import { SwAboutComponent } from './sw-about/sw-about.component';
+import { SwDeanComponent } from './sw-dean/sw-dean.component';
+import { SwCulturalsComponent } from './sw-culturals/sw-culturals.component';
+import { SwFacilitiesComponent } from './sw-facilities/sw-facilities.component';
+import { SwGrievancesComponent } from './sw-grievances/sw-grievances.component';
+import { SwRtiComponent } from './sw-rti/sw-rti.component';
+import { SwRulesComponent } from './sw-rules/sw-rules.component';
+import { SwSGIComponent } from './sw-sgi/sw-sgi.component';
+import { SwSportsComponent } from './sw-sports/sw-sports.component';
+import { SwUgcComponent } from './sw-ugc/sw-ugc.component';
+import { TrainingAndPlacementComponent } from './training-and-placement/training-and-placement.component';
+import { TnpAboutComponent } from './tnp-about/tnp-about.component';
+import { TnpBrochureComponent } from './tnp-brochure/tnp-brochure.component';
+import { TnpContactComponent } from './tnp-contact/tnp-contact.component';
+import { TnpInternshipComponent } from './tnp-internship/tnp-internship.component';
+import { TnpPastRecruitersComponent } from './tnp-past-recruiters/tnp-past-recruiters.component';
+import { TnpProcedureComponent } from './tnp-procedure/tnp-procedure.component';
 
 
 const routes: Routes = [
@@ -109,11 +163,82 @@ const routes: Routes = [
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'administration', redirectTo: '/501' },
+
+  //Administration Links
+  {
+    path: 'administration', component: AdminComponent, children: [
+      { path: '', component: AdminAboutComponent },
+      { path: 'admin-acts', component: AdminActsComponent },
+      { path: 'admin-annual-report', component: AdminAnnualReportComponent },
+      { path: 'admin-board-of-governors', component: AdminBoardOfGovernorsComponent },
+      { path: 'admin-buildings', component: AdminBuildingsComponent },
+      { path: 'admin-chairman', component: AdminChairmanComponent },
+      { path: 'admin-committees', component: AdminCommitteesComponent },
+      { path: 'admin-dean', component: AdminDeanComponent },
+      { path: 'admin-director', component: AdminDirectorComponent },
+      { path: 'admin-finance', component: AdminFinanceComponent },
+      { path: 'admin-hod', component: AdminHodComponent },
+      { path: 'admin-hostel', component: AdminHostelComponent },
+      { path: 'admin-minutes', component: AdminMinutesComponent },
+      { path: 'admin-newsletter', component: AdminNewsletterComponent },
+      { path: 'admin-officers', component: AdminOfficersComponent },
+      { path: 'admin-registrar', component: AdminRegistrarComponent },
+      { path: 'admin-section-staff', component: AdminSectionStaffComponent },
+      { path: 'admin-senate', component: AdminSenateComponent },
+      { path: 'admin-vigilance', component: AdminVigilanceComponent },
+      { path: 'admin-visitor', component: AdminVisitorComponent }
+    ]
+  },
+
+  //Research and Consultancy Links
+  {
+    path: 'research_and_consultancy', component: ResearchComponent, children: [
+      { path: '', component: ResearchAboutComponent },
+      { path: 'research-consultancy-projects', component: ResearchConsultancyProjectsComponent },
+      { path: 'research-dean', component: ResearchDeanComponent },
+      { path: 'fp-chem', component: FpChemComponent },
+      { path: 'fp-civil', component: FpCivilComponent },
+      { path: 'fp-cse', component: FpCseComponent },
+      { path: 'fp-ece', component: FpEceComponent },
+      { path: 'fp-eee', component: FpEeeComponent },
+      { path: 'fp-eng', component: FpEngComponent},
+      { path: 'fp-math', component: FpMathComponent },
+      { path: 'fp-mech', component: FpMechComponent },
+      { path: 'fp-phy', component: FpPhyComponent},
+      { path: 'research-lop', component: ResearchLopComponent },
+      { path: 'research-innovation', component: ResearchInnovationComponent }
+    ]
+  },
+
+  //Student Welfare Links
+  {
+    path: 'student_welfare', component: StudentwfComponent, children: [
+      { path: '', component: SwAboutComponent },
+      { path: 'sw-dean', component: SwDeanComponent },
+      { path: 'sw-culturals', component: SwCulturalsComponent },
+      { path: 'sw-facilities', component: SwFacilitiesComponent },
+      { path: 'sw-grievances', component: SwGrievancesComponent },
+      { path: 'sw-rti', component: SwRtiComponent },
+      { path: 'sw-rules', component: SwRulesComponent },
+      { path: 'sw-sgi', component: SwSGIComponent },
+      { path: 'sw-sports', component: SwSportsComponent },
+      { path: 'sw-ugc', component: SwUgcComponent }
+    ]
+  },
+
+  //Training and Placement Links
+  {
+    path: 'training_and_placement', component: TrainingAndPlacementComponent, children: [
+      { path: '', component: TnpAboutComponent },
+      { path: 'tnp-brochure', component: TnpBrochureComponent },
+      { path: 'tnp-contact', component: TnpContactComponent },
+      { path: 'tnp-internship', component: TnpInternshipComponent },
+      { path: 'tnp-past-recruiters', component: TnpPastRecruitersComponent },
+      { path: 'tnp-procedure', component: TnpProcedureComponent }
+    ]
+  },
+  
   { path: 'departments', component: DepartmentsComponent },
-  { path: 'research_and_consultancy', redirectTo: '/501' },
-  { path: 'student_welfare', redirectTo: '/501' },
-  { path: 'training_and_placement', redirectTo: '/501' },
   
   //Department Links
   {

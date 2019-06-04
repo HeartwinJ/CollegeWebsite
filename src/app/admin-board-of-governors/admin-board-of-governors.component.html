@@ -1,0 +1,22 @@
+<div id="root" >
+    <div id="lblHead_title" class="text-center" >
+        <strong>Board of Governors</strong>
+    </div>
+    <div id="fp-table" class="col-xs-6 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      
+      <table id="table-style" class="table table-bordered table-condensed" >
+        <tr >
+          <th class="text-center" id="sno">S.no.</th>
+          <th class="text-center"> Name</th>
+          <th class="text-center">Designation</th>
+          <th class="text-center">Position</th>
+        </tr>
+        <tr *ngFor="let index of person">
+          <td id ="sno"class="text-center">{{index.no}}</td>
+          <td class="text-center">{{index.name}}</td>
+          <td class="text-center">{{index.designation}}<br>{{index.address}}</td>
+          <td class="text-center">{{index.position}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>

@@ -1,0 +1,28 @@
+<div id="root">
+    <div id="lblHead_Title" class="text-center">
+      <strong>Hostel Administration</strong>
+    </div>
+    <div id ="content" *ngFor="let index of hostel">
+      <div id="lblHead_Title" class="text-center">
+          <strong style="font-size: 22px">{{index.position}}</strong>
+        </div>
+      <div id="hostel" class="row">
+        <div id="left-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <div id="image" class="text-center">
+            <img src="{{index.pic}}">
+          </div>
+        </div>
+        <div id="right-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" >
+          
+          <div id="designation" class="text-left">
+            <p class="text-left"><strong>Name : </strong>{{index.name}} </p>
+            <p class="text-left"><strong>Designation : </strong>{{index.designation}}</p>
+            <p class="text-left"><strong>Department : </strong>{{index.department}}</p>
+            <p class="text-left"><strong>Phone : </strong>{{index.contactTel}}</p>
+            <p class="text-left"><strong>Mail : </strong>{{index.contactMail}}</p>
+            <p class="text-left"><strong>Address : </strong>{{index.address}}</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

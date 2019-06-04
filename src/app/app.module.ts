@@ -94,6 +94,61 @@ import { AcademicAdmissionPhDComponent } from './academic-admission-ph-d/academi
 import { GalleryComponent } from './gallery/gallery.component';
 import { CareerAndJobComponent } from './career-and-job/career-and-job.component';
 
+import { ResearchComponent } from './research/research.component';
+import { ResearchDeanComponent } from './research-dean/research-dean.component';
+import { ResearchConsultancyProjectsComponent } from './research-consultancy-projects/research-consultancy-projects.component';
+import { ResearchLopComponent } from './research-lop/research-lop.component';
+import { ResearchInnovationComponent } from './research-innovation/research-innovation.component';
+import { ResearchAboutComponent } from './research-about/research-about.component';
+import { StudentwfComponent } from './studentwf/studentwf.component';
+import { SwAboutComponent } from './sw-about/sw-about.component';
+import { SwDeanComponent } from './sw-dean/sw-dean.component';
+import { SwRtiComponent } from './sw-rti/sw-rti.component';
+import { SwUgcComponent } from './sw-ugc/sw-ugc.component';
+import { SwGrievancesComponent } from './sw-grievances/sw-grievances.component';
+import { SwFacilitiesComponent } from './sw-facilities/sw-facilities.component';
+import { SwSGIComponent } from './sw-sgi/sw-sgi.component';
+import { SwSportsComponent } from './sw-sports/sw-sports.component';
+import { SwCulturalsComponent } from './sw-culturals/sw-culturals.component';
+import { SwRulesComponent } from './sw-rules/sw-rules.component';
+import { TrainingAndPlacementComponent } from './training-and-placement/training-and-placement.component';
+import { TnpAboutComponent } from './tnp-about/tnp-about.component';
+import { TnpProcedureComponent } from './tnp-procedure/tnp-procedure.component';
+import { TnpBrochureComponent } from './tnp-brochure/tnp-brochure.component';
+import { TnpPastRecruitersComponent } from './tnp-past-recruiters/tnp-past-recruiters.component';
+import { TnpInternshipComponent } from './tnp-internship/tnp-internship.component';
+import { TnpContactComponent } from './tnp-contact/tnp-contact.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminVisitorComponent } from './admin-visitor/admin-visitor.component';
+import { AdminChairmanComponent } from './admin-chairman/admin-chairman.component';
+import { AdminDirectorComponent } from './admin-director/admin-director.component';
+import { AdminBoardOfGovernorsComponent } from './admin-board-of-governors/admin-board-of-governors.component';
+import { AdminSenateComponent } from './admin-senate/admin-senate.component';
+import { AdminRegistrarComponent } from './admin-registrar/admin-registrar.component';
+import { AdminVigilanceComponent } from './admin-vigilance/admin-vigilance.component';
+import { AdminDeanComponent } from './admin-dean/admin-dean.component';
+import { AdminOfficersComponent } from './admin-officers/admin-officers.component';
+import { AdminHodComponent } from './admin-hod/admin-hod.component';
+import { AdminBuildingsComponent } from './admin-buildings/admin-buildings.component';
+import { AdminFinanceComponent } from './admin-finance/admin-finance.component';
+import { AdminActsComponent } from './admin-acts/admin-acts.component';
+import { AdminMinutesComponent } from './admin-minutes/admin-minutes.component';
+import { AdminAnnualReportComponent } from './admin-annual-report/admin-annual-report.component';
+import { AdminCommitteesComponent } from './admin-committees/admin-committees.component';
+import { AdminHostelComponent } from './admin-hostel/admin-hostel.component';
+import { AdminSectionStaffComponent } from './admin-section-staff/admin-section-staff.component';
+import { AdminNewsletterComponent } from './admin-newsletter/admin-newsletter.component';
+import { AdminAboutComponent } from './admin-about/admin-about.component';
+import { FpChemComponent } from './fp-chem/fp-chem.component';
+import { FpCivilComponent } from './fp-civil/fp-civil.component';
+import { FpCseComponent } from './fp-cse/fp-cse.component';
+import { FpEceComponent } from './fp-ece/fp-ece.component';
+import { FpEeeComponent } from './fp-eee/fp-eee.component';
+import { FpEngComponent } from './fp-eng/fp-eng.component';
+import { FpMathComponent } from './fp-math/fp-math.component';
+import { FpMechComponent } from './fp-mech/fp-mech.component';
+import { FpPhyComponent } from './fp-phy/fp-phy.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -183,7 +238,62 @@ import { CareerAndJobComponent } from './career-and-job/career-and-job.component
     AcademicAdmissionMTechComponent,
     AcademicAdmissionPhDComponent,
     GalleryComponent,
-    CareerAndJobComponent
+    CareerAndJobComponent,
+
+    ResearchComponent,
+    ResearchDeanComponent,
+    ResearchConsultancyProjectsComponent,
+    ResearchLopComponent,
+    ResearchInnovationComponent,
+    ResearchAboutComponent,
+    StudentwfComponent,
+    SwAboutComponent,
+    SwDeanComponent,
+    SwRtiComponent,
+    SwUgcComponent,
+    SwGrievancesComponent,
+    SwFacilitiesComponent,
+    SwSGIComponent,
+    SwSportsComponent,
+    SwCulturalsComponent,
+    SwRulesComponent,
+    TrainingAndPlacementComponent,
+    TnpAboutComponent,
+    TnpBrochureComponent,
+    TnpContactComponent,
+    TnpInternshipComponent,
+    TnpPastRecruitersComponent,
+    TnpProcedureComponent,
+    AdminComponent,
+    AdminVisitorComponent,
+    AdminChairmanComponent,
+    AdminDirectorComponent,
+    AdminBoardOfGovernorsComponent,
+    AdminSenateComponent,
+    AdminRegistrarComponent,
+    AdminVigilanceComponent,
+    AdminDeanComponent,
+    AdminOfficersComponent,
+    AdminHodComponent,
+    AdminBuildingsComponent,
+    AdminFinanceComponent,
+    AdminActsComponent,
+    AdminMinutesComponent,
+    AdminAnnualReportComponent,
+    AdminCommitteesComponent,
+    AdminHostelComponent,
+    AdminSectionStaffComponent,
+    AdminNewsletterComponent,
+    AdminAboutComponent,
+    FpChemComponent,
+    FpCivilComponent,
+    FpCseComponent,
+    FpEceComponent,
+    FpEeeComponent,
+    FpEngComponent,
+    FpMathComponent,
+    FpMechComponent,
+    FpPhyComponent
   ],
   imports: [
     BrowserModule,

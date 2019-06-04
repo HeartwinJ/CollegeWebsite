@@ -1,0 +1,83 @@
+<div id="root">
+  <div id="lblHead_title" class="text-center">
+    <strong>Innovation Club</strong>
+  </div>
+  <div id="content" class="text-justify">
+    <p>Innovation club is an interdisciplinary club which primarily focuses on collecting innovative and creative ideas
+      from students and transforming them into worthwhile projects. The ideas hence gathered can be put to meaningful
+      use with careful approach and meticulous efforts to develop industrial standard products and obtain commercial
+      outcomes.</p>
+    <br>
+    <br>
+    <div id="lblHead" class="text-left">
+      <strong>Vision</strong>
+    </div>
+    <ul>
+      <li>
+        <p>To create a platform where optimum knowledge and experience can be shared through experimentation of new ideas.</p>
+      </li>
+      <li>
+        <p>To develop industrial standard projects with collaborative efforts from students and teachers alike.</p>
+      </li>
+    </ul>
+    <br>
+    <div id="lblHead" class="text-left">
+      <strong>Mission</strong>
+    </div>
+    <ul>
+      <li>
+        <p>To encourage active participation from every interested student in implementing the selected best ideas.</p>
+      </li>
+      <li>
+        <p>To provide financial aid to students with best creative ideas so as to encourage their endeavours of developing realisable projects.</p>
+      </li>
+      <li>
+        <p>To inculcate among students the basic skills of leadership, project management, marketing, entrepreneurship etc.</p>
+      </li>
+    </ul>
+    <div id="lblHead" class="text-left">
+        <strong>Members</strong>
+    </div>
+    <div id="lblHead_sub" class="text-left">
+        <strong>Faculty and Staff Members</strong>
+    </div>
+    <div id ="chairperson" class="row">
+      <div id="left-box" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor ="let index of chairperson">
+          <div id="image" class="text-center">
+            <img src="{{index.pic}}">
+          </div>
+      </div>
+      <div id="right-box" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor ="let index of chairperson">
+          <div id="lblHead" class="text-center">
+              <p><strong>{{index.name}}</strong> </p>
+            </div>
+            <div id="designation" class="text-center">
+              <p><strong>Chairperson</strong></p>
+              <p><strong>{{index.designation}}</strong>{{index.mail}}</p>
+            </div>
+      </div>
+    </div>
+    <div id="fac_box" class="col-xs-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 " *ngFor="let index of member">
+        <div id="image" class="text-center">
+          <img src="{{index.pic}}">
+          <div id="lblHead" class="text-center">
+            <p><strong>{{index.name}}</strong> </p>
+          </div>
+          <div id="designation" class="text-center">
+            <p><strong>Member</strong></p>
+            <p><strong>{{index.designation}}</strong>{{index.mail}}</p>
+          </div>
+        </div>
+    </div>
+    <div id="circulars">
+      <a href="/#">Circular for Innovation Club - I</a><br>
+      <a href="/#">Circular for Innovation Club - II</a>
+    </div><br>
+    <div id="lblHead" class="text-left">
+        <strong>Contact:</strong>
+      </div>
+    <div id="contact">
+      <p>innovationclub.nitpy@gmail.com</p>
+    </div>
+  </div>
+</div>

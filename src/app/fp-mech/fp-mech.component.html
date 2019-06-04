@@ -1,0 +1,33 @@
+<div id="root">
+    <div id="lblHead_title" class="text-center" >
+        <strong>Department of Mechanical Engineering</strong>
+    </div>
+    <div id="fp-table" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <table id="table-style" class="table table-bordered" *ngFor="let index of project">
+            <tr>
+                <td><strong>Title of the Project</strong></td>
+                <td>{{index.title}}</td>
+            </tr>
+            <tr>
+                <td><strong>Funding Agencies</strong></td>
+                <td>{{index.fund}}</td>
+            </tr>
+            <tr>
+                <td><strong>Principal Investigator</strong></td>
+                <td>{{index.investigator}}</td>
+            </tr>
+            <tr>
+                <td><strong>Designation</strong></td>
+                <td>{{index.designation}}</td>
+            </tr>
+            <tr>
+                <td><strong>Department</strong></td>
+                <td>{{index.dept}}</td>
+            </tr>
+            <tr>
+                <td><strong>Total Budget</strong></td>
+                <td>{{index.budget}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

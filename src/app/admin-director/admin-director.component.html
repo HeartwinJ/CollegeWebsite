@@ -1,0 +1,24 @@
+<div id="root">
+    <div id="lblHead_Title" class="text-center">
+      <strong>Director</strong>
+    </div>
+    <div id="director" class="row">
+      <div id="left-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor="let index of director">
+        <div id="image" class="text-center">
+          <img src="{{index.pic}}">
+        </div>
+      </div>
+      <div id="right-box" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngFor="let index of director">
+        <div id="lblHead" class="text-center">
+          <p><strong>{{index.name}}</strong> </p>
+        </div>
+        <div id="designation" class="text-center">
+          <p class="text-center">{{index.designation}}</p>
+          <p class="text-center">{{index.address}}</p>
+          <p class="text-center">{{index.contactMail}}</p>
+          <p class="text-center">{{index.contactTel}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
