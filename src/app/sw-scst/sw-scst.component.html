@@ -1,0 +1,60 @@
+<div id="root">
+  <div id="lblHead_title" class="text-center">
+    <strong>SC/ST/OBC Cell</strong>
+  </div>
+  <div id="content" class="text-justify">
+    <p>The SC/ST/OBC Cell, a statutory body has been constituted by the Ministry of Human Resource Development (MHRD),
+      Government of India (GOI) in National Institute of Technology Puducherry to safeguard the interests of the SC/ST &
+      OBC students and employees of the Institute as per the instructions of MHRD, GOI from time to time.</p>
+    <br>
+    <br>
+    <div id="lblHead" class="text-left">
+      <strong>Cell Function</strong>
+    </div>
+    <ul>
+      <li>
+        <p>It functions to promote higher education among the SC/ST, OBC or weaker communities that are suffering from
+          economic, social and educational deprivations.</p>
+      </li>
+      <li>
+        <p>As a Grievances Redressal Cell for the grievances of SC/ST & OBC students and renders them necessary help in
+          solving their academic as well as administrative problems.</p>
+      </li>
+      <li>
+        <p>It continuously monitors and evaluates the reservation policies and other programs intended for SC/ST & OBC
+          by the GOI for their effective implementation at NIT Puducherry.</p>
+      </li>
+      <li>
+        <p>It suggests the follow-up measures to the administration of the Institute for achieving the objectives and
+          targets laid down by MHRD, GOI for the empowerment of SC/ST/OBC.</p>
+      </li>
+    </ul>
+    <div id="lblHead" class="text-left">
+      <strong>Complaints regarding Caste based Discrimination</strong>
+    </div>
+    <p>In case of any caste based discrimination of SC/ST/OBC Students / Staff, you can lodge your complaints from your
+      email ID, with communication details, to<a>liaisonoffr@nitpy.ac.in</a>
+    </p>
+    <div id="contact" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div id="lblHead_Title" class="text-left">
+        <strong style="font-size: 20px">Contact:<br></strong>
+      </div>
+      <div id="content" *ngFor="let index of staff">
+        <div id="lblHead_Title" class="text-center">
+          <strong style="font-size: 18px">{{index.position}}</strong>
+        </div>
+        <div id="staff" class="row">
+          <div id="right-box" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="designation" class="text-left">
+              <p class="text-left"><strong>Name : </strong>{{index.name}} </p>
+              <p class="text-left"><strong>Designation : </strong>{{index.designation}}</p>
+              <p class="text-left"><strong>Department : </strong>{{index.department}}</p>
+              <p class="text-left"><strong>Phone : </strong>{{index.contactTel}}</p>
+              <p class="text-left"><strong>Mail : </strong>{{index.contactMail}}</p>
+              <p class="text-left"><strong>Address : </strong>{{index.address}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

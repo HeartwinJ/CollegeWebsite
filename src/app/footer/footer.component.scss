@@ -29,7 +29,10 @@ footer{
                 width: 50%;
                 #portal_wrapper{
                     .row{
-                        margin-bottom: 2rem;
+                        margin-bottom: 1rem;
+                        #portalLink{
+                            margin-bottom: 1rem;
+                        }
                     }
                 }
             }

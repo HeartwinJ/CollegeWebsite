@@ -12,4 +12,10 @@ export class TnpProcedureComponent implements OnInit {
   ngOnInit() {
   }
 
+  file=[
+    {
+      url:'',
+      filename:'Job Application Form',
+    },
+  ]
 }

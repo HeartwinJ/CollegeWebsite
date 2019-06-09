@@ -68,11 +68,11 @@ export class GalleryComponent implements OnInit {
         },{
           eventTitle: 'Test Event 2',
           pics: [
-            'assets/images/slides/img001.jpg',
-            'assets/images/slides/img002.jpg',
-            'assets/images/slides/img003.jpg',
-            'assets/images/slides/img004.jpg',
-            'assets/images/slides/img005.jpg'
+            'assets/images/slides/img006.jpg',
+            'assets/images/slides/img007.jpg',
+            'assets/images/slides/img008.jpg',
+            'assets/images/slides/img009.jpg',
+            'assets/images/slides/img010.jpg'
           ]
         },
       ]
@@ -91,11 +91,11 @@ export class GalleryComponent implements OnInit {
         },{
           eventTitle: 'Test Event 2',
           pics: [
-            'assets/images/slides/img001.jpg',
-            'assets/images/slides/img002.jpg',
-            'assets/images/slides/img003.jpg',
-            'assets/images/slides/img004.jpg',
-            'assets/images/slides/img005.jpg'
+            'assets/images/slides/img006.jpg',
+            'assets/images/slides/img007.jpg',
+            'assets/images/slides/img008.jpg',
+            'assets/images/slides/img009.jpg',
+            'assets/images/slides/img010.jpg'
           ]
         },
       ]
@@ -114,11 +114,11 @@ export class GalleryComponent implements OnInit {
         },{
           eventTitle: 'Test Event 2',
           pics: [
-            'assets/images/slides/img001.jpg',
-            'assets/images/slides/img002.jpg',
-            'assets/images/slides/img003.jpg',
-            'assets/images/slides/img004.jpg',
-            'assets/images/slides/img005.jpg'
+            'assets/images/slides/img006.jpg',
+            'assets/images/slides/img007.jpg',
+            'assets/images/slides/img008.jpg',
+            'assets/images/slides/img009.jpg',
+            'assets/images/slides/img010.jpg'
           ]
         },
       ]

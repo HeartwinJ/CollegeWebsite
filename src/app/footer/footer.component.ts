@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
+import { MainService } from '../main.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,24 +8,25 @@ declare var $: any;
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  social = {
+    facebook: '',
+    twitter: '',
+    youtube: '',
+    linkedin: ''
+  };
+  
+  contact = {
+    email: '',
+    website: '',
+    phone: '',
+    fax: ''
+  };
+  
+  constructor(private mainService: MainService) { }
 
   ngOnInit() {
+    this.mainService.getFooter().subscribe(data => this.social = data.social);
+    this.mainService.getFooter().subscribe(data => this.contact = data.contact);
   }
 
-/*Edit the Social Media Links in the Footer here*/
-  social = {
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
-    youtube: "https://youtube.com/",
-    linkedin: "https://linkedin.com/"
-  }
-
-  /*Edit the Contact Details in the Footer here*/
-  contact = {
-    email: "123@nitpy.ac.in",
-    website: "nitpy.ac.in",
-    phone: "1234567890",
-    fax: "1234567890"
-  }
 }

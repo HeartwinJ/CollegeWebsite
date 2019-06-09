@@ -12,4 +12,14 @@ export class AdminActsComponent implements OnInit {
   ngOnInit() {
   }
 
+  file=[
+    {
+      url:'',
+      filename:'Act, Statutes & Schedule',
+    },
+    {
+      url:'',
+      filename:'Ammendements in the Statutes',
+    },
+  ]
 }

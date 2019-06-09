@@ -4,9 +4,15 @@
     #slideshow{
         /*height: 384px;*/
         overflow: hidden;
+        .item {
+            background-image: url(/assets/images/loader.svg);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position: center center;
+            }
         .slide-image{
             height: 70vh;
-            width: 80vw;
+            width: 70vw;
         }
     }
     #homeContent{
@@ -52,7 +58,6 @@
 {
     #root{
         #slideshow{
-            /*height: 384px;*/
             overflow: hidden;
             .slide-image{
                 height: 30vh;

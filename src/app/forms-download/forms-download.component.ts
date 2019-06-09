@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainService } from '../main.service';
 
 @Component({
   selector: 'app-forms-download',
@@ -7,57 +8,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormsDownloadComponent implements OnInit {
 
-  constructor() { }
+  faculty = [
+    
+  ];
+
+  students = [
+    
+  ];
+  
+  general = [
+    
+  ];
+  
+  other = [
+    
+  ];
+  
+  stores = [
+    
+  ];
+  
+  academics = [
+
+  ];
+
+  constructor(private mainService: MainService) { }
 
   ngOnInit() {
+    this.mainService.getForms().subscribe(data => this.faculty = data.faculty);
+    this.mainService.getForms().subscribe(data => this.students = data.students);
+    this.mainService.getForms().subscribe(data => this.general = data.general);
+    this.mainService.getForms().subscribe(data => this.other = data.other);
+    this.mainService.getForms().subscribe(data => this.stores = data.stores);
+    this.mainService.getForms().subscribe(data => this.academics = data.academics);
   }
-
-  //Edit this for the Faculty/Staff Forms
-  faculty = [
-    {
-      title: "staffTest",
-      url: "test.pdf"
-    },
-  ];
-  
-  //Edit this for the Student Forms
-  students = [
-    {
-      title: "studentTest",
-      url: "test.pdf"
-    },
-  ];
-  
-  //Edit this for the General Forms
-  general = [
-    {
-      title: "generalTest",
-      url: "test.pdf"
-    },
-  ];
-  
-  //Edit this for the Other Forms
-  other = [
-    {
-      title: "otherTest",
-      url: "test.pdf"
-    },
-  ];
-  
-  //Edit thi for the forms related to stores and purchase
-  stores = [
-    {
-      title: "storesTest",
-      url: "test.pdf"
-    },
-  ];
-  
-  //Edit thi for the forms related to academics
-  academics = [
-    {
-      title: "academicsTest",
-      url: "test.pdf"
-    },
-  ];
 
 }

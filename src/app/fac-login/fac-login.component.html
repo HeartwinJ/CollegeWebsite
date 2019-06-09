@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div id="root">
+  <div id="wrapper">
+    <div id="lblHead">
+      <strong>Faculty Login</strong>
+    </div>
+    <div id="formWrapper">
+      <form #FacLoginForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" required [(ngModel)]="username" name="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" required [(ngModel)]="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!FacLoginForm.form.valid">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

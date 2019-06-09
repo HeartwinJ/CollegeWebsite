@@ -1,3 +1,29 @@
-<p>
-  tnp-contact works!
-</p>
+<div id="root">
+  <div id="lblHead" class="text-center">
+    <strong>Contact Details</strong>
+  </div>
+  <br>
+  <div id="contact" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <div id="lblHead_Title" class="text-left">
+      <strong style="font-size: 22px">Contact:<br></strong>
+    </div>
+    <br>
+    <div id="content" *ngFor="let index of staff">
+      <div id="lblHead_Title" class="text-center">
+        <strong style="font-size: 18px">{{index.position}}</strong>
+      </div>
+      <div id="staff" class="row">
+        <div id="right-box" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div id="designation" class="text-left">
+            <p class="text-left"><strong>Name : </strong>{{index.name}} </p>
+            <p class="text-left"><strong>Designation : </strong>{{index.designation}}</p>
+            <p class="text-left"><strong>Department : </strong>{{index.department}}</p>
+            <p class="text-left"><strong>Phone : </strong>{{index.contactTel}}</p>
+            <p class="text-left"><strong>Mail : </strong>{{index.contactMail}}</p>
+            <p class="text-left"><strong>Address : </strong>{{index.address}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

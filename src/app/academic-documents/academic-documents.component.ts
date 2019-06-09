@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainService } from '../main.service';
 
 @Component({
   selector: 'app-academic-documents',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademicDocumentsComponent implements OnInit {
 
-  constructor() { }
+  academics = [
+
+  ];
+
+  constructor(private mainService: MainService) { }
 
   ngOnInit() {
+    this.mainService.getForms().subscribe(data => this.academics = data.academics);
   }
 
 }

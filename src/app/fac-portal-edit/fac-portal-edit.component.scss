@@ -1,0 +1,12 @@
+@import 'colorscheme';
+#root{
+    #wrapper{
+        width: 100%;
+    }
+    textarea{
+        resize: vertical;
+        min-height: 5rem;
+        height: 10rem;
+        max-height: 50rem;
+    }
+}

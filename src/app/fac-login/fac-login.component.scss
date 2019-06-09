@@ -1,0 +1,31 @@
+@import 'colorscheme';
+#root{
+    flex-grow: 1;
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    #wrapper{
+        width: 30rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background-color: $fac-card-bg;
+        border-radius: 4px;
+        #lblHead{
+            font-size: 18px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+
+    .ng-invalid:not(form)  {
+        border: 1px solid $warning-red;
+    }
+
+    .ng-pristine:not(form)  {
+        /*Border as in Bootstrap's .form-control*/
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}

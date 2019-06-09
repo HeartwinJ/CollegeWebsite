@@ -1,0 +1,82 @@
+<div id="root">
+  <div id="wrapper">
+    <div id="topWrapper">
+      <div id="left">
+        <img src="assets/images/blank-profile-pic.jpg">
+      </div>
+      <div id="right">
+        <div id="innerWrapper">
+          <p><b>Name :</b>{{faculty.result.name}}</p>
+          <p><b>Designation :</b>{{faculty.result.designation}}</p>
+          <p><b>No. of Ph.D Scholars Guided :</b>{{faculty.result.scholarsGuided}}</p>
+        </div>
+      </div>
+    </div>
+    <div id="bottomWrapper" class="row">
+      <div id="educationalQualification" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Educational Qualification :</strong>
+        <div id="content" innerHTML="{{faculty.result.educationalQualification}}"></div>
+      </div>
+      <div id="proffesionalExperience" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Proffesional Experience :</strong>
+        <div id="content" innerHTML="{{faculty.result.proffesionalExperience}}"></div>
+      </div>
+      <div id="journalPapers" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Papers Published in Journals :</strong>
+        <div id="content" innerHTML="{{faculty.result.journalPapers}}"></div>
+      </div>
+      <div id="confPapers" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Papers Presented in Conferences :</strong>
+        <div id="content" innerHTML="{{faculty.result.confPapers}}"></div>
+      </div>
+      <div id="researchProj" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Research Projects Undertaken :</strong>
+        <div id="content" innerHTML="{{faculty.result.researchProj}}"></div>
+      </div>
+      <div id="consultProj" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Consultancy Projects Undertaken :</strong>
+        <div id="content" innerHTML="{{faculty.result.consultProj}}"></div>
+      </div>
+      <div id="patentsGranted" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Patents Granted :</strong>
+        <div id="content" innerHTML="{{faculty.result.patentsGranted}}"></div>
+      </div>
+      <div id="adminResponsibilities" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Administrative responsibilities :</strong>
+        <div id="content" innerHTML="{{faculty.result.adminResponsibilities}}"></div>
+      </div>
+      <div id="workOrganised" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Workshop/Faculty Development Program/Short Term Courses/Conference organized :</strong>
+        <div id="content" innerHTML="{{faculty.result.workOrganised}}"></div>
+      </div>
+      <div id="programsConducted" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>National Programs conducted :</strong>
+        <div id="content" innerHTML="{{faculty.result.programsConducted}}"></div>
+      </div>
+      <div id="labEstablished" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>New Lab Established :</strong>
+        <div id="content" innerHTML="{{faculty.result.labEstablished}}"></div>
+      </div>
+      <div id="booksPublished" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Text/Reference Books or Book chapters in the books published :</strong>
+        <div id="content" innerHTML="{{faculty.result.booksPublished}}"></div>
+      </div>
+      <div id="outreachActivities" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Outreach activities :</strong>
+        <div id="content" innerHTML="{{faculty.result.outreachActivities}}"></div>
+      </div>
+      <div id="proffesionalMembership" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <strong>Membership in professional bodies :</strong>
+        <div id="content" innerHTML="{{faculty.result.proffesionalMembership}}"></div>
+      </div>
+      <div id="googleScholarLink" class="heading col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <strong>Google Scholar Link :</strong>
+        <div id="content"><a href="{{faculty.result.googleScholarLink}}">{{faculty.result.googleScholarLink}}</a></div>
+      </div>
+      <div id="profilePageLink" class="heading col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <strong>Profile Page Link :</strong>
+        <div id="content"><a href="{{faculty.result.profilePageLink}}">{{faculty.result.profilePageLink}}</a></div>
+      </div>
+    </div>
+  </div>
+</div>

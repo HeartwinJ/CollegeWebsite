@@ -132,6 +132,8 @@ import { SwRulesComponent } from './sw-rules/sw-rules.component';
 import { SwSGIComponent } from './sw-sgi/sw-sgi.component';
 import { SwSportsComponent } from './sw-sports/sw-sports.component';
 import { SwUgcComponent } from './sw-ugc/sw-ugc.component';
+import { SwScstComponent } from './sw-scst/sw-scst.component';
+import { WomenCellComponent } from './women-cell/women-cell.component';
 import { TrainingAndPlacementComponent } from './training-and-placement/training-and-placement.component';
 import { TnpAboutComponent } from './tnp-about/tnp-about.component';
 import { TnpBrochureComponent } from './tnp-brochure/tnp-brochure.component';
@@ -139,6 +141,10 @@ import { TnpContactComponent } from './tnp-contact/tnp-contact.component';
 import { TnpInternshipComponent } from './tnp-internship/tnp-internship.component';
 import { TnpPastRecruitersComponent } from './tnp-past-recruiters/tnp-past-recruiters.component';
 import { TnpProcedureComponent } from './tnp-procedure/tnp-procedure.component';
+import { FacLoginComponent } from './fac-login/fac-login.component';
+import { FacPortalComponent } from './fac-portal/fac-portal.component';
+import { FacPortalViewComponent } from './fac-portal-view/fac-portal-view.component';
+import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.component';
 
 
 const routes: Routes = [
@@ -186,7 +192,8 @@ const routes: Routes = [
       { path: 'admin-section-staff', component: AdminSectionStaffComponent },
       { path: 'admin-senate', component: AdminSenateComponent },
       { path: 'admin-vigilance', component: AdminVigilanceComponent },
-      { path: 'admin-visitor', component: AdminVisitorComponent }
+      { path: 'admin-visitor', component: AdminVisitorComponent },
+      { path: '**', redirectTo: '' }
     ]
   },
 
@@ -201,12 +208,13 @@ const routes: Routes = [
       { path: 'fp-cse', component: FpCseComponent },
       { path: 'fp-ece', component: FpEceComponent },
       { path: 'fp-eee', component: FpEeeComponent },
-      { path: 'fp-eng', component: FpEngComponent},
+      { path: 'fp-eng', component: FpEngComponent },
       { path: 'fp-math', component: FpMathComponent },
       { path: 'fp-mech', component: FpMechComponent },
-      { path: 'fp-phy', component: FpPhyComponent},
+      { path: 'fp-phy', component: FpPhyComponent },
       { path: 'research-lop', component: ResearchLopComponent },
-      { path: 'research-innovation', component: ResearchInnovationComponent }
+      { path: 'research-innovation', component: ResearchInnovationComponent },
+      { path: '**', redirectTo: '' }
     ]
   },
 
@@ -222,7 +230,10 @@ const routes: Routes = [
       { path: 'sw-rules', component: SwRulesComponent },
       { path: 'sw-sgi', component: SwSGIComponent },
       { path: 'sw-sports', component: SwSportsComponent },
-      { path: 'sw-ugc', component: SwUgcComponent }
+      { path: 'sw-ugc', component: SwUgcComponent },
+      { path: 'scst-cell', component: SwScstComponent },
+      { path: 'women-cell', component: WomenCellComponent },
+      { path: '**', redirectTo: '' }
     ]
   },
 
@@ -234,7 +245,8 @@ const routes: Routes = [
       { path: 'tnp-contact', component: TnpContactComponent },
       { path: 'tnp-internship', component: TnpInternshipComponent },
       { path: 'tnp-past-recruiters', component: TnpPastRecruitersComponent },
-      { path: 'tnp-procedure', component: TnpProcedureComponent }
+      { path: 'tnp-procedure', component: TnpProcedureComponent },
+      { path: '**', redirectTo: '' }
     ]
   },
   
@@ -243,99 +255,115 @@ const routes: Routes = [
   //Department Links
   {
     path: 'departments/chemistry', component: ChemistryComponent, children: [
-      { path: '', component: ChemHomeComponent},
-      { path: 'faculty_and_staff', component: ChemFacAndStaffComponent},
-      { path: 'laboratory', component: ChemLabComponent},
-      { path: 'syllabus', component: ChemSyllabusComponent},
-      { path: 'projects_and_intern', component: ChemProjectsAndInternComponent},
-      { path: 'events', component: ChemEventsComponent},
+      { path: '', component: ChemHomeComponent },
+      { path: 'faculty_and_staff', component: ChemFacAndStaffComponent },
+      { path: 'laboratory', component: ChemLabComponent },
+      { path: 'syllabus', component: ChemSyllabusComponent },
+      { path: 'projects_and_intern', component: ChemProjectsAndInternComponent },
+      { path: 'events', component: ChemEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
   {
     path: 'departments/civil_engineering', component: CivilEngineeringComponent, children: [
-      { path: '', component: CivilHomeComponent},
-      { path: 'faculty_and_staff', component: CivilFacAndStaffComponent},
-      { path: 'laboratory', component: CivilLabComponent},
-      { path: 'syllabus', component: CivilSyllabusComponent},
-      { path: 'projects_and_intern', component: CivilProjectsAndInternComponent},
-      { path: 'events', component: CivilEventsComponent},
+      { path: '', component: CivilHomeComponent },
+      { path: 'faculty_and_staff', component: CivilFacAndStaffComponent },
+      { path: 'laboratory', component: CivilLabComponent },
+      { path: 'syllabus', component: CivilSyllabusComponent },
+      { path: 'projects_and_intern', component: CivilProjectsAndInternComponent },
+      { path: 'events', component: CivilEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/computer_science_and_engineering', component: ComputerScienceAndEngineeringComponent, children: [
-      { path: '', component: CompHomeComponent},
-      { path: 'faculty_and_staff', component: CompFacAndStaffComponent},
-      { path: 'laboratory', component: CompLabComponent},
-      { path: 'syllabus', component: CompSyllabusComponent},
-      { path: 'projects_and_intern', component: CompProjectsAndInternComponent},
-      { path: 'events', component: CompEventsComponent},
+  {
+    path: 'departments/computer_science_and_engineering', component: ComputerScienceAndEngineeringComponent, children: [
+      { path: '', component: CompHomeComponent },
+      { path: 'faculty_and_staff', component: CompFacAndStaffComponent },
+      { path: 'laboratory', component: CompLabComponent },
+      { path: 'syllabus', component: CompSyllabusComponent },
+      { path: 'projects_and_intern', component: CompProjectsAndInternComponent },
+      { path: 'events', component: CompEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/electrical_and_electronics_engineering', component: ElectricalAndElectronicsEngineeringComponent, children: [
-      { path: '', component: EEHomeComponent},
-      { path: 'faculty_and_staff', component: EEFacAndStaffComponent},
-      { path: 'laboratory', component: EELabComponent},
-      { path: 'syllabus', component: EESyllabusComponent},
-      { path: 'projects_and_intern', component: EEProjectsAndInternComponent},
-      { path: 'events', component: EEEventsComponent},
+  {
+    path: 'departments/electrical_and_electronics_engineering', component: ElectricalAndElectronicsEngineeringComponent, children: [
+      { path: '', component: EEHomeComponent },
+      { path: 'faculty_and_staff', component: EEFacAndStaffComponent },
+      { path: 'laboratory', component: EELabComponent },
+      { path: 'syllabus', component: EESyllabusComponent },
+      { path: 'projects_and_intern', component: EEProjectsAndInternComponent },
+      { path: 'events', component: EEEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/electronics_and_communication_engineering', component: ElectronicsAndCommunicationEngineeringComponent, children: [
-      { path: '', component: ECHomeComponent},
-      { path: 'faculty_and_staff', component: ECFacAndStaffComponent},
-      { path: 'laboratory', component: ECLabComponent},
-      { path: 'syllabus', component: ECSyllabusComponent},
-      { path: 'projects_and_intern', component: ECProjectsAndInternComponent},
-      { path: 'events', component: ECEventsComponent},
+  {
+    path: 'departments/electronics_and_communication_engineering', component: ElectronicsAndCommunicationEngineeringComponent, children: [
+      { path: '', component: ECHomeComponent },
+      { path: 'faculty_and_staff', component: ECFacAndStaffComponent },
+      { path: 'laboratory', component: ECLabComponent },
+      { path: 'syllabus', component: ECSyllabusComponent },
+      { path: 'projects_and_intern', component: ECProjectsAndInternComponent },
+      { path: 'events', component: ECEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/humanities_and_social_sciences', component: HumanitiesAndSocialSciencesComponent, children: [
-      { path: '', component: ScienceHomeComponent},
-      { path: 'faculty_and_staff', component: ScienceFacAndStaffComponent},
-      { path: 'laboratory', component: ScienceLabComponent},
-      { path: 'syllabus', component: ScienceSyllabusComponent},
-      { path: 'projects_and_intern', component: ScienceProjectsAndInternComponent},
-      { path: 'events', component: ScienceEventsComponent},
+  {
+    path: 'departments/humanities_and_social_sciences', component: HumanitiesAndSocialSciencesComponent, children: [
+      { path: '', component: ScienceHomeComponent },
+      { path: 'faculty_and_staff', component: ScienceFacAndStaffComponent },
+      { path: 'laboratory', component: ScienceLabComponent },
+      { path: 'syllabus', component: ScienceSyllabusComponent },
+      { path: 'projects_and_intern', component: ScienceProjectsAndInternComponent },
+      { path: 'events', component: ScienceEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/mathematics', component: MathematicsComponent, children: [
-      { path: '', component: MathHomeComponent},
-      { path: 'faculty_and_staff', component: MathFacAndStaffComponent},
-      { path: 'laboratory', component: MathLabComponent},
-      { path: 'syllabus', component: MathSyllabusComponent},
-      { path: 'projects_and_intern', component: MathProjectsAndInternComponent},
-      { path: 'events', component: MathEventsComponent},
+  {
+    path: 'departments/mathematics', component: MathematicsComponent, children: [
+      { path: '', component: MathHomeComponent },
+      { path: 'faculty_and_staff', component: MathFacAndStaffComponent },
+      { path: 'laboratory', component: MathLabComponent },
+      { path: 'syllabus', component: MathSyllabusComponent },
+      { path: 'projects_and_intern', component: MathProjectsAndInternComponent },
+      { path: 'events', component: MathEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/mechanical_engineering', component: MechanicalEngineeringComponent, children: [
-      { path: '', component: MechHomeComponent},
-      { path: 'faculty_and_staff', component: MechFacAndStaffComponent},
-      { path: 'laboratory', component: MechLabComponent},
-      { path: 'syllabus', component: MechSyllabusComponent},
-      { path: 'projects_and_intern', component: MechProjectsAndInternComponent},
-      { path: 'events', component: MechEventsComponent},
+  {
+    path: 'departments/mechanical_engineering', component: MechanicalEngineeringComponent, children: [
+      { path: '', component: MechHomeComponent },
+      { path: 'faculty_and_staff', component: MechFacAndStaffComponent },
+      { path: 'laboratory', component: MechLabComponent },
+      { path: 'syllabus', component: MechSyllabusComponent },
+      { path: 'projects_and_intern', component: MechProjectsAndInternComponent },
+      { path: 'events', component: MechEventsComponent },
       { path: '**', redirectTo: '' }
     ]
   },
-  { path: 'departments/physics', component: PhysicsComponent, children: [
-      { path: '', component: PhyHomeComponent},
-      { path: 'faculty_and_staff', component: PhyFacAndStaffComponent},
-      { path: 'laboratory', component: PhyLabComponent},
-      { path: 'syllabus', component: PhySyllabusComponent},
-      { path: 'projects_and_intern', component: PhyProjectsAndInternComponent},
-      { path: 'events', component: PhyEventsComponent},
+  {
+    path: 'departments/physics', component: PhysicsComponent, children: [
+      { path: '', component: PhyHomeComponent },
+      { path: 'faculty_and_staff', component: PhyFacAndStaffComponent },
+      { path: 'laboratory', component: PhyLabComponent },
+      { path: 'syllabus', component: PhySyllabusComponent },
+      { path: 'projects_and_intern', component: PhyProjectsAndInternComponent },
+      { path: 'events', component: PhyEventsComponent },
+      { path: '**', redirectTo: '' }
+    ]
+  },
+
+  //Faculty Portal
+  {
+    path: 'facPortal', component: FacPortalComponent, children: [
+      { path: 'view', component: FacPortalViewComponent },
+      { path: 'edit', component: FacPortalEditComponent },
       { path: '**', redirectTo: '' }
     ]
   },
   
   //Footer Links
-  { path: 'facultyLogin', redirectTo: '/501' },
+  { path: 'facultyLogin', component: FacLoginComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'alumniPortal', redirectTo: '/501' },
   { path: 'forms', component: FormsDownloadComponent },
@@ -350,7 +378,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled'
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

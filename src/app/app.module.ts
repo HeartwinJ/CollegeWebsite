@@ -1,5 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 
 import { OwlModule } from 'ngx-owl-carousel';
 import { QuillModule } from 'ngx-quill';
@@ -111,6 +114,8 @@ import { SwSGIComponent } from './sw-sgi/sw-sgi.component';
 import { SwSportsComponent } from './sw-sports/sw-sports.component';
 import { SwCulturalsComponent } from './sw-culturals/sw-culturals.component';
 import { SwRulesComponent } from './sw-rules/sw-rules.component';
+import { SwScstComponent } from './sw-scst/sw-scst.component';
+import { WomenCellComponent } from './women-cell/women-cell.component';
 import { TrainingAndPlacementComponent } from './training-and-placement/training-and-placement.component';
 import { TnpAboutComponent } from './tnp-about/tnp-about.component';
 import { TnpProcedureComponent } from './tnp-procedure/tnp-procedure.component';
@@ -148,6 +153,10 @@ import { FpEngComponent } from './fp-eng/fp-eng.component';
 import { FpMathComponent } from './fp-math/fp-math.component';
 import { FpMechComponent } from './fp-mech/fp-mech.component';
 import { FpPhyComponent } from './fp-phy/fp-phy.component';
+import { FacLoginComponent } from './fac-login/fac-login.component';
+import { FacPortalComponent } from './fac-portal/fac-portal.component';
+import { FacPortalViewComponent } from './fac-portal-view/fac-portal-view.component';
+import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.component';
 
 @NgModule({
   declarations: [
@@ -257,6 +266,8 @@ import { FpPhyComponent } from './fp-phy/fp-phy.component';
     SwSportsComponent,
     SwCulturalsComponent,
     SwRulesComponent,
+    SwScstComponent,
+    WomenCellComponent,
     TrainingAndPlacementComponent,
     TnpAboutComponent,
     TnpBrochureComponent,
@@ -293,11 +304,18 @@ import { FpPhyComponent } from './fp-phy/fp-phy.component';
     FpEngComponent,
     FpMathComponent,
     FpMechComponent,
-    FpPhyComponent
+    FpPhyComponent,
+    FacLoginComponent,
+    FacPortalComponent,
+    FacPortalViewComponent,
+    FacPortalEditComponent,
   ],
   imports: [
     BrowserModule,
+    NgxWebstorageModule.forRoot(),
+    HttpClientModule,
     AppRoutingModule,
+    FormsModule,
     OwlModule,
     QuillModule
   ],

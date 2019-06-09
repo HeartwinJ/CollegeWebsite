@@ -1,36 +1,34 @@
 <app-header></app-header>
-<div id="rootWrapper">
-  <div id="root" class="container container-fluid">
-    <div class="row">
-      <div id="leftbar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-        <strong id="lblHead" class="text-center">
-          <a routerLink="/academics">Academics</a>
-        </strong>
-        <ul>
-          <li><a routerLink="academicOffice">Academic Office</a></li>
-          <li><a routerLink="academicPrograms">Academic Programs</a></li>
-          <li><a routerLink="academicCalendar">Academic Calendar</a></li>
-          <li>
-            <div id="dropdown">
-              <button id="dropbtn">Admission</button>
-              <div id="drop-content">
-                <ul>
-                  <li><a routerLink="admission/btech">B.Tech</a></li>
-                  <li><a routerLink="admission/mtech">M.Tech</a></li>
-                  <li><a routerLink="admission/phd">Ph.D</a></li>
-                </ul>
-              </div>
+<div id="root" class="container container-fluid">
+  <div class="row">
+    <div id="leftbar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      <strong id="lblHead" class="text-center">
+        <a routerLink="/academics">Academics</a>
+      </strong>
+      <ul>
+        <li><a routerLink="academicOffice">Academic Office</a></li>
+        <li><a routerLink="academicPrograms">Academic Programs</a></li>
+        <li><a routerLink="academicCalendar">Academic Calendar</a></li>
+        <li>
+          <div id="dropdown">
+            <button id="dropbtn">Admission</button>
+            <div id="drop-content">
+              <ul>
+                <li><a routerLink="admission/btech">B.Tech</a></li>
+                <li><a routerLink="admission/mtech">M.Tech</a></li>
+                <li><a routerLink="admission/phd">Ph.D</a></li>
+              </ul>
             </div>
-          </li>
-          <li><a routerLink="academicDocuments">Academic Documents</a></li>
-          <li><a routerLink="scholarships">Scholarships</a></li>
-          <li><a routerLink="feeDetails">Fee Details</a></li>
-          <li><a routerLink="digitalInitiatives">Digital Initiatives</a></li>
-        </ul>
-      </div>
-      <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">
-        <router-outlet></router-outlet>
-      </div>
+          </div>
+        </li>
+        <li><a routerLink="academicDocuments">Academic Documents</a></li>
+        <li><a routerLink="scholarships">Scholarships</a></li>
+        <li><a routerLink="feeDetails">Fee Details</a></li>
+        <li><a routerLink="digitalInitiatives">Digital Initiatives</a></li>
+      </ul>
+    </div>
+    <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

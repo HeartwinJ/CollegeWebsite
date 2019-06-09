@@ -1,3 +1,35 @@
-<p>
-  tnp-internship works!
-</p>
+<div id="root">
+    <div id="lblHead_title" class="text-center">
+        <strong>Internship Opportunities</strong>
+    </div>
+    <div id="fp-table" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <table id="table-style" class="table table-bordered" *ngFor="let index of internship">
+            <tr>
+                <td><strong>Area of Internship</strong></td>
+                <td>{{index.area}}</td>
+            </tr>
+            <tr>
+                <td><strong>Department</strong></td>
+                <td>{{index.dept}}</td>
+            </tr>
+            <tr>
+                <td><strong>Duration</strong></td>
+                <td>{{index.duration}}</td>
+            </tr>
+            <tr>
+                <td><strong>Number of Students</strong></td>
+                <td>{{index.no}}</td>
+            </tr>
+        </table>
+    </div>
+    <div id="content" class="text-justify">
+        <p>Interested students can apply for the Internship by emailing their Resume and a scanned copy of a forwarding
+            letter from their HOD for the Internship program to <a href="/#">placement@nitpy.ac.in</a>
+        </p>
+        <br>
+        <strong>The subject of the E-Mail should be in the following format: </strong>
+        <p>"Internship : Department: Area of Internship : Name of Applicant"</p>
+        <strong>Last Date of Submission : </strong> <p>dd-mm-yyyy</p>
+       
+    </div>
+</div>

@@ -1,0 +1,32 @@
+@import 'colorscheme';
+#root{
+    #wrapper{
+        width: 100%;
+        #topWrapper{
+            overflow: auto;
+            margin-bottom: 2rem;
+            #left{
+                width: 50%;
+                float: left;
+                text-align: center;
+                img{
+                    width: 150px;
+                    border-radius: 80px;
+                    border: 1px solid $fac-card-pic-border;
+                }
+            }
+            #right{
+                width: 50%;
+                height: 150px;
+                float: right;
+                display: flex;
+                align-items: center;
+            }
+        }
+        #bottomWrapper{
+            .heading{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

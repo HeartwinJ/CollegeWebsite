@@ -6,7 +6,7 @@
         <div id="carousel-wrapper">
           <owl-carousel [options]="carouselOptions" [items]="slides" [carouselClasses]="['owl-theme', 'sliding']">
             <div class="item" *ngFor="let image of slides">
-              <img class="slide-image" src="{{image.image}}">
+              <img class="slide-image owl-lazy" data-src="{{image.image}}">
             </div>
           </owl-carousel>
         </div>
