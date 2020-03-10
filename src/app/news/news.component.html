@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div id="root" class="container">
+  <div id="lblHead">
+    <strong>News and Announcements</strong>
+  </div>
+  <div id="mainContent">
+    <div id="newsItem" *ngFor="let index of news">
+      <p>{{index.content}}<a *ngIf="index.url" href="{{index.url}}">More...></a></p><hr class="light">
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

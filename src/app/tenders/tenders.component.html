@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div id="root" class="container">
+  <div id="lblHead">
+    <strong>Tenders and Quotations</strong>
+  </div>
+  <div id="mainContent">
+    <div id="tenders-item" *ngFor="let index of tenders">
+      <p>{{index.content}}<a href="{{index.url}}">More...></a></p>
+      <p *ngIf="index.deadline">Deadline: <u>{{index.deadline}}</u></p><hr class="light">
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

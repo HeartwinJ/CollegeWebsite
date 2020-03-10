@@ -27,9 +27,10 @@ export class FacLoginComponent implements OnInit {
     if (this.message.success == 'true') {
       this.sessionStorage.store('loggedInUser',this.message.id)
       this.router.navigate(['facPortal']);
+      console.log(this.message.message);
     }
     else {
-      console.log('Login Failed... Try Again!');
+      console.log(this.message.message);
     }
   }
 

@@ -4,28 +4,28 @@
       <strong>Head of the Department</strong>
     </div>
     <div id="content">
-      <div id="facCard" *ngFor="let index of hod">
-        <div id="pic">
-          <img src="{{index.pic}}">
+        <div id="facCard" *ngFor="let index of hod">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
         </div>
-        <div id="details" class="text-left">
-          <p>
-            <strong>Name :</strong> {{index.name}}<br>
-            {{index.qualification.bach}}<br>
-            {{index.qualification.mast}}<br>
-            {{index.qualification.pg}}<br>
-            <strong>Areas of Interests :</strong> {{index.interests}}<br>
-            <strong>Number of Publications :</strong> {{index.publications}}<br>
-            <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
-            <strong>Email :</strong> {{index.email}}
-          </p>
-        </div>
-      </div>
     </div>
   </div>
   <div id="prof" class="text-center" *ngIf="prof.length">
     <div class="lblHead">
-      <strong>Proffesors</strong>
+      <strong>Professors</strong>
     </div>
     <div id="content">
         <div id="facCard" *ngFor="let index of prof">

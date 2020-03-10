@@ -6,6 +6,7 @@ import { NgxWebstorageModule } from 'ngx-webstorage';
 
 import { OwlModule } from 'ngx-owl-carousel';
 import { QuillModule } from 'ngx-quill';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,34 +36,29 @@ import { ChemEventsComponent } from './chem-events/chem-events.component';
 import { ChemHomeComponent } from './chem-home/chem-home.component';
 import { CivilHomeComponent } from './civil-home/civil-home.component';
 import { CivilFacAndStaffComponent } from './civil-fac-and-staff/civil-fac-and-staff.component';
-import { CivilLabComponent } from './civil-lab/civil-lab.component';
-import { CivilSyllabusComponent } from './civil-syllabus/civil-syllabus.component';
-import { CivilProjectsAndInternComponent } from './civil-projects-and-intern/civil-projects-and-intern.component';
-import { CivilEventsComponent } from './civil-events/civil-events.component';
-import { CompHomeComponent } from './comp-home/comp-home.component';
-import { CompFacAndStaffComponent } from './comp-fac-and-staff/comp-fac-and-staff.component';
-import { CompLabComponent } from './comp-lab/comp-lab.component';
-import { CompSyllabusComponent } from './comp-syllabus/comp-syllabus.component';
-import { CompProjectsAndInternComponent } from './comp-projects-and-intern/comp-projects-and-intern.component';
-import { CompEventsComponent } from './comp-events/comp-events.component';
-import { ECHomeComponent } from './echome/echome.component';
-import { ECFacAndStaffComponent } from './ecfac-and-staff/ecfac-and-staff.component';
-import { ECLabComponent } from './eclab/eclab.component';
-import { ECSyllabusComponent } from './ecsyllabus/ecsyllabus.component';
-import { ECProjectsAndInternComponent } from './ecprojects-and-intern/ecprojects-and-intern.component';
-import { ECEventsComponent } from './ecevents/ecevents.component';
-import { EEHomeComponent } from './eehome/eehome.component';
-import { EEFacAndStaffComponent } from './eefac-and-staff/eefac-and-staff.component';
-import { EELabComponent } from './eelab/eelab.component';
-import { EESyllabusComponent } from './eesyllabus/eesyllabus.component';
-import { EEProjectsAndInternComponent } from './eeprojects-and-intern/eeprojects-and-intern.component';
-import { EEEventsComponent } from './eeevents/eeevents.component';
-import { ScienceHomeComponent } from './science-home/science-home.component';
-import { ScienceFacAndStaffComponent } from './science-fac-and-staff/science-fac-and-staff.component';
-import { ScienceLabComponent } from './science-lab/science-lab.component';
-import { ScienceSyllabusComponent } from './science-syllabus/science-syllabus.component';
-import { ScienceProjectsAndInternComponent } from './science-projects-and-intern/science-projects-and-intern.component';
-import { ScienceEventsComponent } from './science-events/science-events.component';
+import { CseHomeComponent } from './cse-home/cse-home.component';
+import { CseFacAndStaffComponent } from './cse-fac-and-staff/cse-fac-and-staff.component';
+import { CseLabComponent } from './cse-lab/cse-lab.component';
+import { CseSyllabusComponent } from './cse-syllabus/cse-syllabus.component';
+import { CseProjectsAndInternComponent } from './cse-projects-and-intern/cse-projects-and-intern.component';
+import { CseEventsComponent } from './cse-events/cse-events.component';
+import { EceHomeComponent } from './ece-home/ece-home.component';
+import { EceFacAndStaffComponent } from './ece-fac-and-staff/ece-fac-and-staff.component';
+import { EceLabComponent } from './ece-lab/ece-lab.component';
+import { EceSyllabusComponent } from './ece-syllabus/ece-syllabus.component';
+import { EceProjectsAndInternComponent } from './ece-projects-and-intern/ece-projects-and-intern.component';
+import { EceEventsComponent } from './ece-events/ece-events.component';
+import { EeeHomeComponent } from './eee-home/eee-home.component';
+import { EeeFacAndStaffComponent } from './eee-fac-and-staff/eee-fac-and-staff.component';
+import { EeeLabComponent } from './eee-lab/eee-lab.component';
+import { EeeSyllabusComponent } from './eee-syllabus/eee-syllabus.component';
+import { EeeProjectsAndInternComponent } from './eee-projects-and-intern/eee-projects-and-intern.component';
+import { EeeEventsComponent } from './eee-events/eee-events.component';
+import { HumanitiesHomeComponent } from './humanities-home/humanities-home.component';
+import { HumanitiesFacAndStaffComponent } from './humanities-fac-and-staff/humanities-fac-and-staff.component';
+import { HumanitiesSyllabusComponent } from './humanities-syllabus/humanities-syllabus.component';
+import { HumanitiesProjectsAndInternComponent } from './humanities-projects-and-intern/humanities-projects-and-intern.component';
+import { HumanitiesEventsComponent } from './humanities-events/humanities-events.component';
 import { MechHomeComponent } from './mech-home/mech-home.component';
 import { MechFacAndStaffComponent } from './mech-fac-and-staff/mech-fac-and-staff.component';
 import { MechLabComponent } from './mech-lab/mech-lab.component';
@@ -77,7 +73,6 @@ import { PhyProjectsAndInternComponent } from './phy-projects-and-intern/phy-pro
 import { PhyEventsComponent } from './phy-events/phy-events.component';
 import { MathHomeComponent } from './math-home/math-home.component';
 import { MathFacAndStaffComponent } from './math-fac-and-staff/math-fac-and-staff.component';
-import { MathLabComponent } from './math-lab/math-lab.component';
 import { MathSyllabusComponent } from './math-syllabus/math-syllabus.component';
 import { MathProjectsAndInternComponent } from './math-projects-and-intern/math-projects-and-intern.component';
 import { MathEventsComponent } from './math-events/math-events.component';
@@ -157,6 +152,9 @@ import { FacLoginComponent } from './fac-login/fac-login.component';
 import { FacPortalComponent } from './fac-portal/fac-portal.component';
 import { FacPortalViewComponent } from './fac-portal-view/fac-portal-view.component';
 import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.component';
+import { NewsComponent } from './news/news.component';
+import { EventsComponent } from './events/events.component';
+import { TendersComponent } from './tenders/tenders.component';
 
 @NgModule({
   declarations: [
@@ -187,34 +185,29 @@ import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.compon
     ChemHomeComponent,
     CivilHomeComponent,
     CivilFacAndStaffComponent,
-    CivilLabComponent,
-    CivilSyllabusComponent,
-    CivilProjectsAndInternComponent,
-    CivilEventsComponent,
-    CompHomeComponent,
-    CompFacAndStaffComponent,
-    CompLabComponent,
-    CompSyllabusComponent,
-    CompProjectsAndInternComponent,
-    CompEventsComponent,
-    ECHomeComponent,
-    ECFacAndStaffComponent,
-    ECLabComponent,
-    ECSyllabusComponent,
-    ECProjectsAndInternComponent,
-    ECEventsComponent,
-    EEHomeComponent,
-    EEFacAndStaffComponent,
-    EELabComponent,
-    EESyllabusComponent,
-    EEProjectsAndInternComponent,
-    EEEventsComponent,
-    ScienceHomeComponent,
-    ScienceFacAndStaffComponent,
-    ScienceLabComponent,
-    ScienceSyllabusComponent,
-    ScienceProjectsAndInternComponent,
-    ScienceEventsComponent,
+    CseHomeComponent,
+    CseFacAndStaffComponent,
+    CseLabComponent,
+    CseSyllabusComponent,
+    CseProjectsAndInternComponent,
+    CseEventsComponent,
+    EceHomeComponent,
+    EceFacAndStaffComponent,
+    EceLabComponent,
+    EceSyllabusComponent,
+    EceProjectsAndInternComponent,
+    EceEventsComponent,
+    EeeHomeComponent,
+    EeeFacAndStaffComponent,
+    EeeLabComponent,
+    EeeSyllabusComponent,
+    EeeProjectsAndInternComponent,
+    EeeEventsComponent,
+    HumanitiesHomeComponent,
+    HumanitiesFacAndStaffComponent,
+    HumanitiesSyllabusComponent,
+    HumanitiesProjectsAndInternComponent,
+    HumanitiesEventsComponent,
     MechHomeComponent,
     MechFacAndStaffComponent,
     MechLabComponent,
@@ -229,7 +222,6 @@ import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.compon
     PhyEventsComponent,
     MathHomeComponent,
     MathFacAndStaffComponent,
-    MathLabComponent,
     MathSyllabusComponent,
     MathProjectsAndInternComponent,
     MathEventsComponent,
@@ -309,6 +301,9 @@ import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.compon
     FacPortalComponent,
     FacPortalViewComponent,
     FacPortalEditComponent,
+    NewsComponent,
+    EventsComponent,
+    TendersComponent,
   ],
   imports: [
     BrowserModule,
@@ -317,7 +312,8 @@ import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.compon
     AppRoutingModule,
     FormsModule,
     OwlModule,
-    QuillModule
+    QuillModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,37 +24,31 @@ import { ChemEventsComponent } from './chem-events/chem-events.component';
 import { ChemHomeComponent } from './chem-home/chem-home.component';
 import { CivilHomeComponent } from './civil-home/civil-home.component';
 import { CivilFacAndStaffComponent } from './civil-fac-and-staff/civil-fac-and-staff.component';
-import { CivilLabComponent } from './civil-lab/civil-lab.component';
-import { CivilSyllabusComponent } from './civil-syllabus/civil-syllabus.component';
-import { CivilProjectsAndInternComponent } from './civil-projects-and-intern/civil-projects-and-intern.component';
-import { CivilEventsComponent } from './civil-events/civil-events.component';
-import { CompHomeComponent } from './comp-home/comp-home.component';
-import { CompFacAndStaffComponent } from './comp-fac-and-staff/comp-fac-and-staff.component';
-import { CompLabComponent } from './comp-lab/comp-lab.component';
-import { CompSyllabusComponent } from './comp-syllabus/comp-syllabus.component';
-import { CompProjectsAndInternComponent } from './comp-projects-and-intern/comp-projects-and-intern.component';
-import { CompEventsComponent } from './comp-events/comp-events.component';
-import { EEHomeComponent } from './eehome/eehome.component';
-import { EEFacAndStaffComponent } from './eefac-and-staff/eefac-and-staff.component';
-import { EELabComponent } from './eelab/eelab.component';
-import { EESyllabusComponent } from './eesyllabus/eesyllabus.component';
-import { EEProjectsAndInternComponent } from './eeprojects-and-intern/eeprojects-and-intern.component';
-import { EEEventsComponent } from './eeevents/eeevents.component';
-import { ECHomeComponent } from './echome/echome.component';
-import { ECFacAndStaffComponent } from './ecfac-and-staff/ecfac-and-staff.component';
-import { ECLabComponent } from './eclab/eclab.component';
-import { ECSyllabusComponent } from './ecsyllabus/ecsyllabus.component';
-import { ECProjectsAndInternComponent } from './ecprojects-and-intern/ecprojects-and-intern.component';
-import { ECEventsComponent } from './ecevents/ecevents.component';
-import { ScienceHomeComponent } from './science-home/science-home.component';
-import { ScienceFacAndStaffComponent } from './science-fac-and-staff/science-fac-and-staff.component';
-import { ScienceLabComponent } from './science-lab/science-lab.component';
-import { ScienceSyllabusComponent } from './science-syllabus/science-syllabus.component';
-import { ScienceProjectsAndInternComponent } from './science-projects-and-intern/science-projects-and-intern.component';
-import { ScienceEventsComponent } from './science-events/science-events.component';
-import { MathHomeComponent } from './math-home/math-home.component';
+import { CseHomeComponent } from './cse-home/cse-home.component';
+import { CseFacAndStaffComponent } from './cse-fac-and-staff/cse-fac-and-staff.component';
+import { CseLabComponent } from './cse-lab/cse-lab.component';
+import { CseSyllabusComponent } from './cse-syllabus/cse-syllabus.component';
+import { CseProjectsAndInternComponent } from './cse-projects-and-intern/cse-projects-and-intern.component';
+import { CseEventsComponent } from './cse-events/cse-events.component';
+import { EeeHomeComponent } from './eee-home/eee-home.component';
+import { EeeFacAndStaffComponent } from './eee-fac-and-staff/eee-fac-and-staff.component';
+import { EeeLabComponent } from './eee-lab/eee-lab.component';
+import { EeeSyllabusComponent } from './eee-syllabus/eee-syllabus.component';
+import { EeeProjectsAndInternComponent } from './eee-projects-and-intern/eee-projects-and-intern.component';
+import { EeeEventsComponent } from './eee-events/eee-events.component';
+import { EceHomeComponent } from './ece-home/ece-home.component';
+import { EceFacAndStaffComponent } from './ece-fac-and-staff/ece-fac-and-staff.component';
+import { EceSyllabusComponent } from './ece-syllabus/ece-syllabus.component';
+import { EceProjectsAndInternComponent } from './ece-projects-and-intern/ece-projects-and-intern.component';
+import { EceEventsComponent } from './ece-events/ece-events.component';
+import { EceLabComponent } from './ece-lab/ece-lab.component';
+import { HumanitiesHomeComponent } from './humanities-home/humanities-home.component';
+import { HumanitiesFacAndStaffComponent } from './humanities-fac-and-staff/humanities-fac-and-staff.component';
+import { HumanitiesSyllabusComponent } from './humanities-syllabus/humanities-syllabus.component';
+import { HumanitiesProjectsAndInternComponent } from './humanities-projects-and-intern/humanities-projects-and-intern.component';
+import { HumanitiesEventsComponent } from './humanities-events/humanities-events.component';
 import { MathFacAndStaffComponent } from './math-fac-and-staff/math-fac-and-staff.component';
-import { MathLabComponent } from './math-lab/math-lab.component';
+import { MathHomeComponent } from './math-home/math-home.component';
 import { MathSyllabusComponent } from './math-syllabus/math-syllabus.component';
 import { MathProjectsAndInternComponent } from './math-projects-and-intern/math-projects-and-intern.component';
 import { MathEventsComponent } from './math-events/math-events.component';
@@ -145,11 +139,18 @@ import { FacLoginComponent } from './fac-login/fac-login.component';
 import { FacPortalComponent } from './fac-portal/fac-portal.component';
 import { FacPortalViewComponent } from './fac-portal-view/fac-portal-view.component';
 import { FacPortalEditComponent } from './fac-portal-edit/fac-portal-edit.component';
+import { NewsComponent } from './news/news.component';
+import { EventsComponent } from './events/events.component';
+import { TendersComponent } from './tenders/tenders.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
+
+  { path: 'news', component: NewsComponent },
+  { path: 'events', component: EventsComponent },
+  { path: 'tenders', component: TendersComponent },
 
   //Header Links
   { path: 'about', component: AboutUsComponent },
@@ -253,6 +254,9 @@ const routes: Routes = [
   { path: 'departments', component: DepartmentsComponent },
   
   //Department Links
+
+  //Chemistry
+
   {
     path: 'departments/chemistry', component: ChemistryComponent, children: [
       { path: '', component: ChemHomeComponent },
@@ -260,76 +264,84 @@ const routes: Routes = [
       { path: 'laboratory', component: ChemLabComponent },
       { path: 'syllabus', component: ChemSyllabusComponent },
       { path: 'projects_and_intern', component: ChemProjectsAndInternComponent },
-      { path: 'events', component: ChemEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: 'events', component: ChemEventsComponent }
     ]
   },
+
+  //Civil Engineering
+
   {
     path: 'departments/civil_engineering', component: CivilEngineeringComponent, children: [
       { path: '', component: CivilHomeComponent },
-      { path: 'faculty_and_staff', component: CivilFacAndStaffComponent },
-      { path: 'laboratory', component: CivilLabComponent },
-      { path: 'syllabus', component: CivilSyllabusComponent },
-      { path: 'projects_and_intern', component: CivilProjectsAndInternComponent },
-      { path: 'events', component: CivilEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: 'faculty_and_staff', component: CivilFacAndStaffComponent }
     ]
   },
+
+  //Computer Science and Engineering
+
   {
     path: 'departments/computer_science_and_engineering', component: ComputerScienceAndEngineeringComponent, children: [
-      { path: '', component: CompHomeComponent },
-      { path: 'faculty_and_staff', component: CompFacAndStaffComponent },
-      { path: 'laboratory', component: CompLabComponent },
-      { path: 'syllabus', component: CompSyllabusComponent },
-      { path: 'projects_and_intern', component: CompProjectsAndInternComponent },
-      { path: 'events', component: CompEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: '', component: CseHomeComponent },
+      { path: 'faculty_and_staff', component: CseFacAndStaffComponent },
+      { path: 'laboratory', component: CseLabComponent },
+      { path: 'syllabus', component: CseSyllabusComponent },
+      { path: 'projects_and_intern', component: CseProjectsAndInternComponent },
+      { path: 'events', component: CseEventsComponent }
     ]
   },
+
+  //Electrical and Electronics Engineering
+
   {
     path: 'departments/electrical_and_electronics_engineering', component: ElectricalAndElectronicsEngineeringComponent, children: [
-      { path: '', component: EEHomeComponent },
-      { path: 'faculty_and_staff', component: EEFacAndStaffComponent },
-      { path: 'laboratory', component: EELabComponent },
-      { path: 'syllabus', component: EESyllabusComponent },
-      { path: 'projects_and_intern', component: EEProjectsAndInternComponent },
-      { path: 'events', component: EEEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: '', component: EeeHomeComponent },
+      { path: 'faculty_and_staff', component: EeeFacAndStaffComponent },
+      { path: 'laboratory', component: EeeLabComponent },
+      { path: 'syllabus', component: EeeSyllabusComponent },
+      { path: 'projects_and_intern', component: EeeProjectsAndInternComponent },
+      { path: 'events', component: EeeEventsComponent }
     ]
   },
+
+  //Electronics and Communication Engineering
+  
   {
     path: 'departments/electronics_and_communication_engineering', component: ElectronicsAndCommunicationEngineeringComponent, children: [
-      { path: '', component: ECHomeComponent },
-      { path: 'faculty_and_staff', component: ECFacAndStaffComponent },
-      { path: 'laboratory', component: ECLabComponent },
-      { path: 'syllabus', component: ECSyllabusComponent },
-      { path: 'projects_and_intern', component: ECProjectsAndInternComponent },
-      { path: 'events', component: ECEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: '', component: EceHomeComponent },
+      { path: 'faculty_and_staff', component: EceFacAndStaffComponent },
+      { path: 'laboratory', component: EceLabComponent },
+      { path: 'syllabus', component: EceSyllabusComponent },
+      { path: 'projects_and_intern', component: EceProjectsAndInternComponent },
+      { path: 'events', component: EceEventsComponent }
     ]
   },
+
+  //Humanities and social sciences
+
   {
     path: 'departments/humanities_and_social_sciences', component: HumanitiesAndSocialSciencesComponent, children: [
-      { path: '', component: ScienceHomeComponent },
-      { path: 'faculty_and_staff', component: ScienceFacAndStaffComponent },
-      { path: 'laboratory', component: ScienceLabComponent },
-      { path: 'syllabus', component: ScienceSyllabusComponent },
-      { path: 'projects_and_intern', component: ScienceProjectsAndInternComponent },
-      { path: 'events', component: ScienceEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: '', component: HumanitiesHomeComponent },
+      { path: 'faculty_and_staff', component: HumanitiesFacAndStaffComponent },
+      { path: 'syllabus', component: HumanitiesSyllabusComponent },
+      { path: 'projects_and_intern', component: HumanitiesProjectsAndInternComponent },
+      { path: 'events', component: HumanitiesEventsComponent }
     ]
   },
+
+  //Mathematics
+
   {
     path: 'departments/mathematics', component: MathematicsComponent, children: [
       { path: '', component: MathHomeComponent },
       { path: 'faculty_and_staff', component: MathFacAndStaffComponent },
-      { path: 'laboratory', component: MathLabComponent },
       { path: 'syllabus', component: MathSyllabusComponent },
       { path: 'projects_and_intern', component: MathProjectsAndInternComponent },
-      { path: 'events', component: MathEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: 'events', component: MathEventsComponent }
     ]
   },
+
+  //Mechanical Engineering
+
   {
     path: 'departments/mechanical_engineering', component: MechanicalEngineeringComponent, children: [
       { path: '', component: MechHomeComponent },
@@ -337,10 +349,12 @@ const routes: Routes = [
       { path: 'laboratory', component: MechLabComponent },
       { path: 'syllabus', component: MechSyllabusComponent },
       { path: 'projects_and_intern', component: MechProjectsAndInternComponent },
-      { path: 'events', component: MechEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: 'events', component: MechEventsComponent }
     ]
   },
+
+  //Physics
+
   {
     path: 'departments/physics', component: PhysicsComponent, children: [
       { path: '', component: PhyHomeComponent },
@@ -348,12 +362,12 @@ const routes: Routes = [
       { path: 'laboratory', component: PhyLabComponent },
       { path: 'syllabus', component: PhySyllabusComponent },
       { path: 'projects_and_intern', component: PhyProjectsAndInternComponent },
-      { path: 'events', component: PhyEventsComponent },
-      { path: '**', redirectTo: '' }
+      { path: 'events', component: PhyEventsComponent }
     ]
   },
 
   //Faculty Portal
+
   {
     path: 'facPortal', component: FacPortalComponent, children: [
       { path: 'view', component: FacPortalViewComponent },
@@ -363,6 +377,7 @@ const routes: Routes = [
   },
   
   //Footer Links
+
   { path: 'facultyLogin', component: FacLoginComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'alumniPortal', redirectTo: '/501' },
@@ -372,6 +387,7 @@ const routes: Routes = [
   { path: 'nad', component: NadComponent },
 
   //Errorpages
+
   { path: '501', component: UnderConstructionComponent },
   { path: '404', component: PageNotFoundComponentComponent },
   { path: '**', redirectTo: '/404' }

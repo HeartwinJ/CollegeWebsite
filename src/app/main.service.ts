@@ -45,21 +45,18 @@ export class MainService {
   }
 
   loginFac(username: string, password: string): Observable<IJsonMessage> {
-    return this.http.post<IJsonMessage>('http://192.168.56.102/CollegeWebsite/api/facLogin.php', {username, password} );
+    return this.http.post<IJsonMessage>('/assets/api/facLogin.php', {username, password} );
+    //return this.http.post<IJsonMessage>('http://192.168.56.102/CollegeWebsite/api/facLogin.php', {username, password} );
   }
   
   getFac(): Observable<IJsonFacDetails> {
     let id = this.sessionStorage.retrieve('loggedInUser');
-    return this.http.post<IJsonFacDetails>('http://192.168.56.102/CollegeWebsite/api/getFaculty.php', {id});
+    return this.http.post<IJsonFacDetails>('/assets/api/getFaculty.php', {id});
+    //return this.http.post<IJsonFacDetails>('http://192.168.56.102/CollegeWebsite/api/getFaculty.php', {id});
   }
 
-  /*setFac(fac: any) {
-    this.faculty.forEach(function (index) {
-      if (index.id == fac.id) {
-        index = fac;
-        console.log('Index is ::');
-        console.log(index);
-      }
-    });
-  }*/
+  setFac(fac: IFacDetails): Observable<IJsonMessage> {
+    return this.http.post<IJsonMessage>('/assets/api/setFaculty.php', {fac});
+    //return this.http.post<IJsonMessage>('http://192.168.56.102/CollegeWebsite/api/setFaculty.php', {fac});
+  }
 }

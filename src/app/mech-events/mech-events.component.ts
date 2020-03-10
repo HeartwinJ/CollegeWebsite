@@ -12,4 +12,18 @@ export class MechEventsComponent implements OnInit {
   ngOnInit() {
   }
 
+  events = [
+    {
+      title: 'This is an Event title',
+      url: '#'
+    },
+    {
+      title: 'This is an Event title',
+      url: '#'
+    },
+    {
+      title: 'This is an Event title',
+      url: '#'
+    }
+  ];
 }

@@ -43,9 +43,9 @@ export class HomeComponent implements OnInit {
       "image": "assets/images/slides/img010.jpg"
     }, {
       "image": "assets/images/slides/img011.jpg"
-    }, {
-      "image": "assets/images/slides/img012.jpg"
-    }
+    }//, {
+     // "image": "assets/images/slides/img012.jpg"
+    //}
   ];
 
   constructor(private mainService: MainService) { }
@@ -57,16 +57,26 @@ export class HomeComponent implements OnInit {
   }
 
   carouselOptions = {
-    startPosition: 0,
-    margin: 10,
-    autoWidth: true,
-    items: 1,
-    center: true,
-    loop: true,
+    //margin: 10,
+    //autoWidth: true,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    infinite: true,
     autoplay: true,
-    autoplayTimeout: 3000,
-    nav: false,
-    lazyLoad: true
+    lazyLoad: 'progressive',
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    dots: true
+  };
+
+  slickConfig = {
+    autoplay: true,
+    infinite: true,
+    pauseOnHover: true,
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 5
   };
   
 }

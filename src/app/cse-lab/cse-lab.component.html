@@ -1,0 +1,31 @@
+<div id="root">
+  <div id="lblHead_title" class="text-center">
+    <strong>Computer Science and Engineering Laboratory</strong>
+  </div>
+  <div id="content" class="text-justify">
+    <p>Well Equipped and Hi-Tech Computers are available for the use by the students and staffs as well. The labs have a
+      1024 Mbps connection that enables students to stay up to date with the ever changing world. The following lab
+      experiments are conducted:</p>
+    <br>
+    <ul>
+      <li>OS Lab (GNU/LINUX)</li>
+      <li>Programming Languages (C,C++)</li>
+      <li>Data Structures and Algorithms</li>
+      <li>DBMS (MySQL & PHP)</li>
+      <li>System Programming</li>
+      <li>Microprocessor & Interfacing</li>
+      <li>Compiler Design</li>
+      <li>Network Programming</li>
+    </ul>
+    <div id="lab-gallery" class="row">
+      <div id="img-box" class="col-xs-12 col-md-6 col-sm-6 col-lg-6 col-xl-6" *ngFor="let index of images">
+        <div id="image">
+          <img src="{{index.pic}}">
+        </div>
+        <div id="img-title">
+          <p class="text-center"><strong>{{index.title}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

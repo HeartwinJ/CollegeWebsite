@@ -12,4 +12,10 @@ export class PhyProjectsAndInternComponent implements OnInit {
   ngOnInit() {
   }
 
+  projects = [
+    {
+      title: 'This is an Projects title',
+      url: '#'
+    },
+  ];
 }

@@ -1,1 +1,27 @@
-@import 'deptFacAndStaff';
+@import 'colorscheme';
+#root{
+    .lblHead{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        strong{
+            font-size: 18px;
+        }
+    }
+    #facCard{
+        display: flex;
+        background-color: $fac-card-bg;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        #pic{
+            img{
+                width: 150px;
+                border-radius: 80px;
+                border: 1px solid $fac-card-pic-border;
+            }
+        }
+        #details{
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+    }
+}

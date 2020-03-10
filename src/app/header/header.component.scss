@@ -33,6 +33,27 @@ header{
                 }
             }
         }
+        #access-bar{
+            position:absolute;
+            top:2rem;
+            right:2rem;
+            nav{
+                
+                button{
+                    text-decoration-style: none;
+                    padding: 1rem;
+                    border: none;
+                    background: none;
+                }
+                a{
+                    display:inline-block;
+                    cursor:pointer;
+                    color:#ffffff;
+                    font-size:18px;
+                   
+                }
+            }
+        }
     }
 
     #header_bottom{
@@ -42,12 +63,18 @@ header{
         background-color: $navbar-bg;
         #iconWrapper{
             background-color: $navbar-bg;
-            height: 42px;
-            display: none;
+            #homeIcon{
+                height: 42px;
+                padding: 1rem;
+                float: left;
+                display: block;
+            }
             #menuIcon{
                 height: 42px;
+                padding: 0.5rem;
                 float: right;
                 margin-right: 2rem;
+                display: none;
             }
         }
         nav{
@@ -157,11 +184,11 @@ header{
             #iconWrapper{
                 background-color: $navbar-bg;
                 height: 42px;
-                display: block;
                 #menuIcon{
                     height: 42px;
                     float: right;
                     margin-right: 2rem;
+                    display: block;
                 }
             }
             .navWrapper{

@@ -16,6 +16,14 @@ export class ChemEventsComponent implements OnInit {
     {
       title: 'This is an Event title',
       url: '#'
+    },
+    {
+      title: 'This is an Event title',
+      url: '#'
+    },
+    {
+      title: 'This is an Event title',
+      url: '#'
     }
   ];
 }

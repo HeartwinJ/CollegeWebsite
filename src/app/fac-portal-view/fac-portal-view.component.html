@@ -13,68 +13,68 @@
       </div>
     </div>
     <div id="bottomWrapper" class="row">
-      <div id="educationalQualification" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Educational Qualification :</strong>
+      <div id="educationalQualification" class="item col-xs-12" *ngIf="faculty.result.educationalQualification">
+        <div id="heading"><strong>Educational Qualification :</strong></div>
         <div id="content" innerHTML="{{faculty.result.educationalQualification}}"></div>
       </div>
-      <div id="proffesionalExperience" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Proffesional Experience :</strong>
+      <div id="proffesionalExperience" class="item col-xs-12" *ngIf="faculty.result.proffesionalExperience">
+        <div id="heading"><strong>Proffesional Experience :</strong></div>
         <div id="content" innerHTML="{{faculty.result.proffesionalExperience}}"></div>
       </div>
-      <div id="journalPapers" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Papers Published in Journals :</strong>
+      <div id="journalPapers" class="item col-xs-12" *ngIf="faculty.result.journalPapers">
+        <div id="heading"><strong>Papers Published in Journals :</strong></div>
         <div id="content" innerHTML="{{faculty.result.journalPapers}}"></div>
       </div>
-      <div id="confPapers" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Papers Presented in Conferences :</strong>
+      <div id="confPapers" class="item col-xs-12" *ngIf="faculty.result.confPapers">
+        <div id="heading"><strong>Papers Presented in Conferences :</strong></div>
         <div id="content" innerHTML="{{faculty.result.confPapers}}"></div>
       </div>
-      <div id="researchProj" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Research Projects Undertaken :</strong>
+      <div id="researchProj" class="item col-xs-12" *ngIf="faculty.result.researchProj">
+        <div id="heading"><strong>Research Projects Undertaken :</strong></div>
         <div id="content" innerHTML="{{faculty.result.researchProj}}"></div>
       </div>
-      <div id="consultProj" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Consultancy Projects Undertaken :</strong>
+      <div id="consultProj" class="item col-xs-12" *ngIf="faculty.result.consultProj">
+        <div id="heading"><strong>Consultancy Projects Undertaken :</strong></div>
         <div id="content" innerHTML="{{faculty.result.consultProj}}"></div>
       </div>
-      <div id="patentsGranted" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Patents Granted :</strong>
+      <div id="patentsGranted" class="item col-xs-12" *ngIf="faculty.result.patentsGranted">
+        <div id="heading"><strong>Patents Granted :</strong></div>
         <div id="content" innerHTML="{{faculty.result.patentsGranted}}"></div>
       </div>
-      <div id="adminResponsibilities" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Administrative responsibilities :</strong>
+      <div id="adminResponsibilities" class="item col-xs-12" *ngIf="faculty.result.adminResponsibilities">
+        <div id="heading"><strong>Administrative responsibilities :</strong></div>
         <div id="content" innerHTML="{{faculty.result.adminResponsibilities}}"></div>
       </div>
-      <div id="workOrganised" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Workshop/Faculty Development Program/Short Term Courses/Conference organized :</strong>
+      <div id="workOrganised" class="item col-xs-12" *ngIf="faculty.result.workOrganised">
+        <div id="heading"><strong>Workshop/Faculty Development Program/Short Term Courses/Conference organized :</strong></div>
         <div id="content" innerHTML="{{faculty.result.workOrganised}}"></div>
       </div>
-      <div id="programsConducted" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>National Programs conducted :</strong>
+      <div id="programsConducted" class="item col-xs-12" *ngIf="faculty.result.programsConducted">
+        <div id="heading"><strong>National Programs conducted :</strong></div>
         <div id="content" innerHTML="{{faculty.result.programsConducted}}"></div>
       </div>
-      <div id="labEstablished" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>New Lab Established :</strong>
+      <div id="labEstablished" class="item col-xs-12" *ngIf="faculty.result.labEstablished">
+        <div id="heading"><strong>New Lab Established :</strong></div>
         <div id="content" innerHTML="{{faculty.result.labEstablished}}"></div>
       </div>
-      <div id="booksPublished" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Text/Reference Books or Book chapters in the books published :</strong>
+      <div id="booksPublished" class="item col-xs-12" *ngIf="faculty.result.booksPublished">
+        <div id="heading"><strong>Text/Reference Books or Book chapters in the books published :</strong></div>
         <div id="content" innerHTML="{{faculty.result.booksPublished}}"></div>
       </div>
-      <div id="outreachActivities" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Outreach activities :</strong>
+      <div id="outreachActivities" class="item col-xs-12" *ngIf="faculty.result.outreachActivities">
+        <div id="heading"><strong>Outreach activities :</strong></div>
         <div id="content" innerHTML="{{faculty.result.outreachActivities}}"></div>
       </div>
-      <div id="proffesionalMembership" class="heading col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <strong>Membership in professional bodies :</strong>
+      <div id="proffesionalMembership" class="item col-xs-12" *ngIf="faculty.result.proffesionalMembership">
+        <div id="heading"><strong>Membership in professional bodies :</strong></div>
         <div id="content" innerHTML="{{faculty.result.proffesionalMembership}}"></div>
       </div>
-      <div id="googleScholarLink" class="heading col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <strong>Google Scholar Link :</strong>
+      <div id="googleScholarLink" class="item col-xs-12" *ngIf="faculty.result.googleScholarLink">
+        <div id="heading"><strong>Google Scholar Link :</strong></div>
         <div id="content"><a href="{{faculty.result.googleScholarLink}}">{{faculty.result.googleScholarLink}}</a></div>
       </div>
-      <div id="profilePageLink" class="heading col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <strong>Profile Page Link :</strong>
+      <div id="profilePageLink" class="item col-xs-12" *ngIf="faculty.result.profilePageLink">
+        <div id="heading"><strong>Profile Page Link :</strong></div>
         <div id="content"><a href="{{faculty.result.profilePageLink}}">{{faculty.result.profilePageLink}}</a></div>
       </div>
     </div>

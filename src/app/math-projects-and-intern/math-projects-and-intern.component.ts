@@ -12,4 +12,10 @@ export class MathProjectsAndInternComponent implements OnInit {
   ngOnInit() {
   }
 
+  projects = [
+    {
+      title: 'This is an Projects title',
+      url: '#'
+    },
+  ];
 }

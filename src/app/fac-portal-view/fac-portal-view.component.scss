@@ -24,8 +24,15 @@
             }
         }
         #bottomWrapper{
-            .heading{
+            .item{
                 margin-bottom: 1rem;
+            }
+            #heading{
+                font-size: 18px;
+                margin-bottom: 1rem;
+            }
+            #content{
+                margin-left: 2rem;
             }
         }
     }

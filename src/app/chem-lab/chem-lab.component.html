@@ -1,3 +1,18 @@
-<p>
-  chem-lab works!
-</p>
+<div id="root">
+  <div id="lblHead" class="text-center">
+    <strong>Laboratory</strong>
+  </div>
+  <div class="text-justify">
+    <p>The Department has well equipped laboratories in the fields of Analytical, Polymer and Electrochemistry. List of Important Instruments/ Facilities in Chemistry Department are as follows:</p>
+  </div>
+  <div id="lab-gallery" class="row">
+    <div id="img-box" class="col-xs-12 col-md-6 col-sm-6 col-lg-6 col-xl-6" *ngFor="let index of images">
+      <div id="image">
+        <img src="{{index.pic}}">
+      </div>
+      <div id="img-title">
+        <p class="text-center"><strong>{{index.title}}</strong></p>
+      </div>
+    </div>
+  </div>
+</div>

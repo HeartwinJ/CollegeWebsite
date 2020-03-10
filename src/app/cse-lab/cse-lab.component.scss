@@ -1,0 +1,28 @@
+#root{
+    #lblHead_title{
+        margin-bottom: 2rem;
+        strong{
+            font-size: 24px;
+        }
+    }
+    #content{
+        font-size:18px;
+        #lab-gallery{
+            margin-top:4rem;
+            
+            #img-box{
+                img{
+                   width:100%;
+                   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                   margin-left:1rem;
+                   margin-top:1rem;
+                }
+                p{
+                    margin-top:1rem;
+                }
+                
+            }
+              
+        }
+    }
+}

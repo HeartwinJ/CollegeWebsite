@@ -42,8 +42,7 @@ export class FacPortalViewComponent implements OnInit {
   ngOnInit() {
     this.mainService.getFac().subscribe(data => {
       this.faculty.result = data.result;
-      this.faculty.success = data.success;
-      this.faculty.message = data.message;
+      console.log(data.message);
     });
   }
 

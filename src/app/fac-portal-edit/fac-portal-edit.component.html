@@ -6,7 +6,7 @@
             <strong>Profile Picture :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <input type="file" [(ngModel)]="faculty.result.profilePicture" name="profilePicture">
+            <input type="file" [(ngModel)]="faculty.profilePicture" name="profilePicture">
           </div>
         </div>
         <div id="name" class="row">
@@ -14,7 +14,7 @@
             <strong>Name :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <input class="form-control" type="text" [(ngModel)]="faculty.result.name" name="name">
+            <input class="form-control" type="text" [(ngModel)]="faculty.name" name="name">
           </div>
         </div>
         <div id="scholarsGuided" class="row">
@@ -22,7 +22,7 @@
             <strong>No. of Ph.D Scholars Guided :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <input class="form-control" type="number" [(ngModel)]="faculty.result.scholarsGuided" name="scholarsGuided">
+            <input class="form-control" type="number" [(ngModel)]="faculty.scholarsGuided" name="scholarsGuided">
           </div>
         </div>
         <div id="educationalQualification" class="row">
@@ -30,7 +30,7 @@
             <strong>Educational Qualification :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.educationalQualification" name="educationalQualification"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.educationalQualification" name="educationalQualification"></quill-editor>
           </div>
         </div>
         <div id="proffesionalExperience" class="row">
@@ -38,7 +38,7 @@
             <strong>Proffesional Experience :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.proffesionalExperience" name="proffesionalExperience"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.proffesionalExperience" name="proffesionalExperience"></quill-editor>
           </div>
         </div>
         <div id="journalPapers" class="row">
@@ -46,7 +46,7 @@
             <strong>Papers Published in Journals :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.journalPapers" name="journalPapers"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.journalPapers" name="journalPapers"></quill-editor>
           </div>
         </div>
         <div id="confPapers" class="row">
@@ -54,7 +54,7 @@
             <strong>Papers Presented in Conferences :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.confPapers" name="confPapers"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.confPapers" name="confPapers"></quill-editor>
           </div>
         </div>
         <div id="researchProj" class="row">
@@ -62,7 +62,7 @@
             <strong>Research Projects Undertaken :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.researchProj" name="researchProj"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.researchProj" name="researchProj"></quill-editor>
           </div>
         </div>
         <div id="consultProj" class="row">
@@ -70,7 +70,7 @@
             <strong>Consultancy Projects Undertaken :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.consultProj" name="consultProj"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.consultProj" name="consultProj"></quill-editor>
           </div>
         </div>
         <div id="patentsGranted" class="row">
@@ -78,7 +78,7 @@
             <strong>Patents Granted :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.patentsGranted" name="patentsGranted"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.patentsGranted" name="patentsGranted"></quill-editor>
           </div>
         </div>
         <div id="adminResponsibilities" class="row">
@@ -86,7 +86,7 @@
             <strong>Administrative responsibilities :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.adminResponsibilities" name="adminResponsibilities"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.adminResponsibilities" name="adminResponsibilities"></quill-editor>
           </div>
         </div>
         <div id="workOrganised" class="row">
@@ -94,7 +94,7 @@
             <strong>Workshop/Faculty Development Program/Short Term Courses/Conference organized :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.workOrganised" name="workOrganised"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.workOrganised" name="workOrganised"></quill-editor>
           </div>
         </div>
         <div id="programsConducted" class="row">
@@ -102,7 +102,7 @@
             <strong>National Programs conducted :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.programsConducted" name="programsConducted"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.programsConducted" name="programsConducted"></quill-editor>
           </div>
         </div>
         <div id="labEstablished" class="row">
@@ -110,7 +110,7 @@
             <strong>New Lab Established :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.labEstablished" name="labEstablished"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.labEstablished" name="labEstablished"></quill-editor>
           </div>
         </div>
         <div id="booksPublished" class="row">
@@ -118,7 +118,7 @@
             <strong>Text/Reference Books or Book chapters in the books published :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.booksPublished" name="booksPublished"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.booksPublished" name="booksPublished"></quill-editor>
           </div>
         </div>
         <div id="outreachActivities" class="row">
@@ -126,7 +126,7 @@
             <strong>Outreach activities :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.outreachActivities" name="outreachActivities"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.outreachActivities" name="outreachActivities"></quill-editor>
           </div>
         </div>
         <div id="proffesionalMembership" class="row">
@@ -134,7 +134,7 @@
             <strong>Membership in professional bodies :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.result.proffesionalMembership" name="proffesionalMembership"></quill-editor>
+            <quill-editor [styles]="editorStyles" [modules]="editorConfig" [(ngModel)]="faculty.proffesionalMembership" name="proffesionalMembership"></quill-editor>
           </div>
         </div>
         <div id="googleScholarLink" class="row">
@@ -142,7 +142,7 @@
             <strong>Google Scholar Link :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <input class="form-control" type="url" [(ngModel)]="faculty.result.googleScholarLink" name="googleScholarLink">
+            <input class="form-control" type="url" [(ngModel)]="faculty.googleScholarLink" name="googleScholarLink">
           </div>
         </div>
         <div id="profilePageLink" class="row">
@@ -150,7 +150,7 @@
             <strong>Profile Page Link :</strong>
           </div>
           <div class="form-group col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
-            <input class="form-control" type="url" [(ngModel)]="faculty.result.profilePageLink" name="profilePageLink">
+            <input class="form-control" type="url" [(ngModel)]="faculty.profilePageLink" name="profilePageLink">
           </div>
         </div>
         <div class="text-right">

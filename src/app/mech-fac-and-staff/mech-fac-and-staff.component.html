@@ -1,3 +1,146 @@
-<p>
-  mech-fac-and-staff works!
-</p>
+<div id="root">
+    <div id="hod" class="text-center" *ngIf="hod.length">
+      <div class="lblHead">
+        <strong>Head of the Department</strong>
+      </div>
+      <div id="content">
+        <div id="facCard" *ngFor="let index of hod">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="prof" class="text-center" *ngIf="prof.length">
+      <div class="lblHead">
+        <strong>Professors</strong>
+      </div>
+      <div id="content">
+        <div id="facCard" *ngFor="let index of prof">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="assocProf" class="text-center" *ngIf="assocProf.length">
+      <div class="lblHead">
+        <strong>Associate Proffesors</strong>
+      </div>
+      <div id="content">
+        <div id="facCard" *ngFor="let index of assocProf">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="assistProf" class="text-center" *ngIf="assistProf.length">
+      <div class="lblHead">
+        <strong>Assistant Proffesors</strong>
+      </div>
+      <div id="content">
+        <div id="facCard" *ngFor="let index of assistProf">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="inspireFac" class="text-center" *ngIf="inspireFac.length">
+      <div class="lblHead">
+        <strong>Inspire Faculty</strong>
+      </div>
+      <div id="content">
+        <div id="facCard" *ngFor="let index of inspireFac">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="labAssist" class="text-center" *ngIf="labAssist.length">
+      <div class="lblHead">
+        <strong>Lab Assistants</strong>
+      </div>
+      <div id="content">
+        <div id="facCard" *ngFor="let index of labAssist">
+          <div id="pic">
+            <img src="{{index.pic}}">
+          </div>
+          <div id="details" class="text-left">
+            <p>
+              <strong>Name :</strong> {{index.name}}<br>
+              {{index.qualification.bach}}<br>
+              {{index.qualification.mast}}<br>
+              {{index.qualification.pg}}<br>
+              <strong>Areas of Interests :</strong> {{index.interests}}<br>
+              <strong>Number of Publications :</strong> {{index.publications}}<br>
+              <strong>Number of Funded Projects :</strong> {{index.projects}}<br>
+              <strong>Email :</strong> {{index.email}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
