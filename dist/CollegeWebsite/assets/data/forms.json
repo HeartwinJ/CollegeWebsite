@@ -1,0 +1,39 @@
+{
+
+    "faculty": [
+        {
+          "title": "staffTest",
+          "url": "test.pdf"
+        }
+    ],
+    "students": [
+        {
+          "title": "studentTest",
+          "url": "test.pdf"
+        }
+    ],
+    "general": [
+        {
+          "title": "generalTest",
+          "url": "test.pdf"
+        }
+    ],
+    "other": [
+        {
+          "title": "otherTest",
+          "url": "test.pdf"
+        }
+    ],
+    "stores": [
+        {
+          "title": "storesTest",
+          "url": "test.pdf"
+        }
+    ],
+    "academics": [
+        {
+          "title": "academicsTest",
+          "url": "test.pdf"
+        }
+    ]
+}

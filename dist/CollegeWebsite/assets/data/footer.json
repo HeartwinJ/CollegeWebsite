@@ -1,0 +1,15 @@
+{
+
+    "social" : {
+        "facebook": "https://www.facebook.com/",
+        "twitter": "https://twitter.com/",
+        "youtube": "https://youtube.com/",
+        "linkedin": "https://linkedin.com/"
+    },
+    "contact" : {
+        "email": "123@nitpy.ac.in",
+        "website": "nitpy.ac.in",
+        "phone": "1234567890",
+        "fax": "1234567890"
+    }
+}
